@@ -1,4 +1,4 @@
-import os, smtplib, logging, hashlib, traceback, datetime, re
+import os, smtplib, logging, hashlib, datetime, re, traceback   
 from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText

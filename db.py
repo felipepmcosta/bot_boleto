@@ -1,5 +1,4 @@
-import psycopg2
-import logging
+import psycopg2, logging
 
 # Configurando o sistema de logging para o módulo db.py
 logger = logging.getLogger(__name__)
