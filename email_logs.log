@@ -1,0 +1,1191 @@
+2024-02-26 14:04:28,452 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 14:04:29,494 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 14:05:00,867 - INFO - Envio de e-mails pausado.
+2024-02-26 14:21:45,075 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 14:21:46,155 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 14:21:47,195 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:12:53,007 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:13:32,577 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:14:12,356 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:14:19,517 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:14:33,406 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:14:34,487 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:14:35,522 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:16:01,883 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:16:02,940 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:16:03,974 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:17:08,317 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:17:09,384 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:17:10,422 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:19:53,246 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:20:13,374 - ERROR - Ocorreu um erro: can only concatenate str (not "bytes") to str
+2024-02-26 15:20:46,998 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link'
+2024-02-26 15:21:56,970 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:21:58,026 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:21:59,068 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:25:06,004 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:25:07,038 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:25:08,074 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:25:56,319 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:25:57,369 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:25:58,419 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:26:36,252 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:26:37,286 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:26:38,325 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:35:15,518 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'mat'
+2024-02-26 15:35:48,021 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'mat'
+2024-02-26 15:36:08,902 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'link_base'
+2024-02-26 15:36:22,835 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:36:23,886 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:36:24,921 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:38:10,515 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'mat'
+2024-02-26 15:38:30,940 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:38:31,982 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:38:33,015 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:40:14,922 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:40:15,979 - INFO - E-mail enviado para: exemplo@email.com
+2024-02-26 15:40:17,023 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:42:53,261 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:42:54,292 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:44:48,750 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:44:49,783 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:46:43,644 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:46:44,685 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:47:22,252 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:47:23,303 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:48:13,473 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'mat'
+2024-02-26 15:48:37,487 - ERROR - Ocorreu um erro: can only concatenate str (not "bytes") to str
+2024-02-26 15:49:36,190 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:49:37,227 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:53:22,662 - ERROR - Ocorreu um erro: 'LINK'
+2024-02-26 15:54:42,573 - ERROR - Ocorreu um erro: 'linkToken'
+2024-02-26 15:56:42,094 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:56:43,129 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:57:57,228 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:57:58,254 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 15:59:02,945 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 15:59:03,978 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 16:00:35,051 - ERROR - Ocorreu um erro: gerar_token() missing 1 required positional argument: 'mat'
+2024-02-26 16:00:52,492 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 16:00:53,532 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 16:01:31,641 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 16:01:32,690 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 16:02:32,440 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 16:02:33,476 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-26 16:03:23,666 - INFO - E-mail enviado para: maycon.csc@smrede.com.br
+2024-02-26 16:03:24,704 - INFO - Relatï¿½rio de envio de e-mails enviado por e-mail.
+2024-02-27 10:00:33,656 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: [Errno 2] No such file or directory: 'caminho_para_seu_arquivo_de_modelo_de_email.html'
+2024-02-27 10:01:06,627 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 10:01:06,654 - INFO - Relatï¿½rio de envios com falha enviado por e-mail.
+2024-02-27 10:09:04,843 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: [Errno 2] No such file or directory: 'caminho_para_seu_arquivo_de_modelo_de_email.html'
+2024-02-27 10:09:25,478 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:13:29,710 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:17:20,897 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:19:28,709 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:23:10,199 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: enviarEmail() got an unexpected keyword argument 'formato'
+2024-02-27 10:24:42,112 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:29:00,860 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:37:10,724 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: [Errno 2] No such file or directory: 'relatorio_email.html'
+2024-02-27 10:37:50,219 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: enviarEmail() got an unexpected keyword argument 'formato'
+2024-02-27 10:38:16,740 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:40:57,914 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 10:53:22,146 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:05:40,185 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: [Errno 2] No such file or directory: 'relatorio_template.html'
+2024-02-27 11:06:10,601 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:14:57,401 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:14:57,438 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:17:57,696 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:17:57,731 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:19:23,942 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:19:24,111 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:19:24,142 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:23:13,007 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:23:13,035 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:23:13,066 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:25:30,606 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:25:30,763 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:25:30,811 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:27:59,593 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:27:59,609 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:27:59,640 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:31:01,102 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:31:01,266 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:31:01,312 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:33:35,762 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:33:35,788 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:33:35,819 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:37:54,009 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:37:54,161 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:37:54,211 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:42:18,757 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:42:19,079 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:42:19,111 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:43:21,379 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:43:21,553 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:43:21,597 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:43:51,778 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:43:51,856 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:43:51,900 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:48:18,083 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:48:18,099 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:48:18,115 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: cannot access local variable 'matricula' where it is not associated with a value
+2024-02-27 11:54:07,846 - ERROR - Erro de validaï¿½ï¿½o de e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:54:08,012 - ERROR - Erro de validaï¿½ï¿½o de e-mail: The domain name gmailll.com does not send email.
+2024-02-27 11:54:08,012 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: cannot access local variable 'matricula' where it is not associated with a value
+2024-02-27 11:55:45,104 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:55:45,119 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:55:45,152 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 11:58:41,763 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 11:58:41,779 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 11:58:41,813 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 12:03:48,484 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:03:48,671 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:03:48,718 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 12:05:34,999 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:05:35,017 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:05:35,051 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 12:06:56,113 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:06:56,130 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:06:56,165 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 12:07:35,293 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:07:35,309 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:07:35,340 - INFO - Relatï¿½rio de e-mails com problema enviado por e-mail.
+2024-02-27 12:19:43,668 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:19:43,967 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:19:43,967 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'relatorioEmail' is not defined
+2024-02-27 12:21:24,305 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:21:24,334 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:21:24,335 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: [Errno 2] No such file or directory: 'relatorioCorreto.html'
+2024-02-27 12:21:24,362 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:22:22,701 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:22:22,714 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:22:22,714 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: [Errno 2] No such file or directory: 'relatorioCorreto.html'
+2024-02-27 12:22:22,748 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:23:06,585 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:23:06,613 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:23:06,647 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:23:06,675 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:24:24,089 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:24:24,105 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:24:24,105 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: name 'totalSucesso' is not defined
+2024-02-27 12:24:24,136 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:25:24,992 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:25:25,145 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:25:25,177 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:25:25,223 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:37:43,495 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:37:43,511 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:37:43,542 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:37:43,574 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:38:39,012 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:38:39,178 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:38:39,209 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:38:39,241 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:39:12,659 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:39:12,688 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:39:12,713 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:39:12,744 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:41:21,839 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:41:21,854 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:41:21,885 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:41:21,925 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:41:21,925 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'os' is not defined
+2024-02-27 12:42:04,269 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:42:04,291 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:42:04,323 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:42:04,354 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:44:12,738 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:44:13,192 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:44:13,235 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:44:13,252 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:46:49,104 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:46:49,132 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:46:49,163 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:46:49,195 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:49:37,365 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:49:37,539 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:49:37,586 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:49:37,617 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:49:37,617 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: registrar_envios_xml() takes 2 positional arguments but 3 were given
+2024-02-27 12:51:51,665 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:51:51,696 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:51:51,727 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:51:51,760 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 12:58:29,080 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 12:58:29,233 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 12:58:29,272 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 12:58:29,292 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:12:58,365 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:12:58,544 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:12:58,588 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:12:58,620 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:17:47,172 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:17:47,336 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:17:47,372 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:17:47,407 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:19:15,202 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:19:15,223 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:19:15,250 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:19:15,276 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:20:32,001 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:20:32,025 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:20:32,049 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:20:32,081 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:21:28,809 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:21:28,841 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:21:28,872 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:21:28,903 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:21:31,626 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:21:31,641 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:21:31,667 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:21:31,700 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:22:16,997 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:22:17,023 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:22:17,059 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:22:17,083 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:24:07,351 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:24:07,518 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:24:07,568 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:24:07,597 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:30:44,100 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:30:44,253 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:30:44,253 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: name 'idx' is not defined
+2024-02-27 14:30:44,253 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios com problema: name 'idx' is not defined
+2024-02-27 14:31:44,670 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:31:44,685 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:31:44,685 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: too many values to unpack (expected 2)
+2024-02-27 14:31:44,685 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios com problema: too many values to unpack (expected 2)
+2024-02-27 14:36:50,157 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:36:50,324 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:36:50,324 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios corretos: name 'idx' is not defined
+2024-02-27 14:36:50,324 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios com problema: name 'idx' is not defined
+2024-02-27 14:38:26,434 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:38:26,465 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:38:26,497 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:38:26,497 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios com problema: cannot access local variable 'tabelaSucesso' where it is not associated with a value
+2024-02-27 14:40:45,898 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:40:45,984 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:40:46,110 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:40:46,143 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:44:07,228 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:44:07,244 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:44:07,284 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:44:07,297 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:46:12,709 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:46:12,740 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:46:12,771 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:46:12,803 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:47:31,997 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:47:32,024 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:47:32,053 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:47:32,077 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 14:48:08,600 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 14:48:08,616 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 14:48:08,660 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 14:48:08,689 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 15:00:59,989 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 15:01:00,452 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 15:01:00,499 - INFO - Relatï¿½rio de envios corretos enviado por e-mail.
+2024-02-27 15:01:00,531 - INFO - Relatï¿½rio de envios com problema enviado por e-mail.
+2024-02-27 15:45:50,469 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 15:45:50,785 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 15:45:50,840 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 15:45:50,877 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 15:49:01,015 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 15:49:01,056 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 15:49:01,099 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 15:49:01,126 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 15:49:01,165 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 15:53:40,356 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 15:53:40,545 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 15:53:40,592 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 15:53:40,623 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 15:53:40,671 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:13:38,533 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:13:38,980 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:13:39,020 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:13:39,048 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:13:39,080 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:26:02,252 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:26:02,407 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:26:02,591 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:26:02,758 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:26:02,946 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:29:04,937 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:29:04,968 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:29:05,000 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:29:05,051 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:29:05,085 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:34:07,583 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:34:07,761 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:34:07,818 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:34:07,849 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:34:07,881 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:38:08,805 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'erro' is not defined
+2024-02-27 16:43:15,747 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:43:15,917 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:43:15,949 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:43:15,981 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:43:16,012 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:44:49,785 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:44:49,797 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:44:49,829 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:44:49,857 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:44:49,881 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:47:53,768 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:47:53,927 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:47:53,972 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:47:54,002 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:47:54,028 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:48:42,046 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:48:42,222 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:48:42,267 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:48:42,300 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:48:42,323 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:51:38,854 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:51:38,886 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:51:38,915 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:51:38,937 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:51:38,968 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:53:26,314 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:53:26,340 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 16:53:26,376 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 16:53:26,407 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 16:53:26,446 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 16:56:35,054 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:56:35,054 - ERROR - Ocorr eu um erro ao gerar o relatï¿½rio de e-mail: name 'ex' is not defined
+2024-02-27 16:57:12,028 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:57:12,028 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'e' is not defined
+2024-02-27 16:58:01,604 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 16:58:01,604 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'e' is not defined
+2024-02-27 17:01:19,688 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:01:19,841 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 17:01:19,880 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:01:19,907 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 17:01:19,933 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:03:30,218 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:03:30,235 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:03:30,266 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:03:30,309 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:07:17,334 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:07:17,507 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 17:07:17,542 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:07:17,589 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 17:07:17,629 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:11:17,421 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:11:17,453 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:11:17,486 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:11:17,504 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:12:20,711 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:12:20,890 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:12:20,921 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:12:20,953 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:14:20,635 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:14:20,964 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:14:20,964 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: 'list' object has no attribute 'get'
+2024-02-27 17:14:20,964 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: list indices must be integers or slices, not str
+2024-02-27 17:15:25,762 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:15:25,797 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:15:25,797 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: 'list' object has no attribute 'get'
+2024-02-27 17:15:25,797 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: list indices must be integers or slices, not str
+2024-02-27 17:17:01,361 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:17:01,383 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:17:01,383 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: 'list' object has no attribute 'get'
+2024-02-27 17:17:01,383 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: list indices must be integers or slices, not str
+2024-02-27 17:18:04,542 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:18:04,714 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:18:04,743 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:18:04,791 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:21:19,164 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:21:19,194 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:21:19,224 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:21:19,251 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:26:48,528 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:26:48,696 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:26:48,696 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: cannot access local variable 'corpo_email' where it is not associated with a value
+2024-02-27 17:26:48,696 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: cannot access local variable 'corpo_email' where it is not associated with a value
+2024-02-27 17:29:24,818 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:29:24,849 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:29:24,880 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:29:24,912 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:30:43,455 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:30:43,487 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:30:43,522 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:30:43,550 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:30:43,574 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:31:17,239 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:31:17,254 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:31:17,301 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:31:17,332 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:31:19,418 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:31:19,434 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:31:19,471 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:31:19,489 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:34:49,748 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:34:49,748 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'matricula' is not defined
+2024-02-27 17:35:10,428 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:35:10,599 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:35:10,655 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:35:10,683 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:35:53,790 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:35:53,790 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'matricula' is not defined
+2024-02-27 17:40:44,107 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: enviarEmail() missing 3 required positional arguments: 'nome', 'matricula', and 'email'
+2024-02-27 17:41:44,705 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:41:44,869 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:41:44,869 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: enviarEmail() missing 3 required positional arguments: 'nome', 'matricula', and 'email'
+2024-02-27 17:41:44,869 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: enviarEmail() missing 3 required positional arguments: 'nome', 'matricula', and 'email'
+2024-02-27 17:42:16,678 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:42:16,720 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:42:16,720 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Sucesso: enviarEmail() missing 3 required positional arguments: 'nome', 'matricula', and 'email'
+2024-02-27 17:42:16,720 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de envios Problema: enviarEmail() missing 3 required positional arguments: 'nome', 'matricula', and 'email'
+2024-02-27 17:42:46,203 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'corpo_email' is not defined
+2024-02-27 17:45:45,147 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'corpo_email' is not defined
+2024-02-27 17:46:42,777 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'matricula' is not defined
+2024-02-27 17:48:45,968 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:48:46,011 - INFO - Relatï¿½rio de envios Sucesso para a unidade Matriz enviado por e-mail.
+2024-02-27 17:48:46,055 - INFO - Relatï¿½rio de envios Sucesso para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:48:46,055 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: registroXml() takes 3 positional arguments but 4 were given
+2024-02-27 17:49:32,738 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:49:32,769 - INFO - Relatï¿½rio de envios Sucesso para a unidade Matriz enviado por e-mail.
+2024-02-27 17:49:32,800 - INFO - Relatï¿½rio de envios Sucesso para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:51:02,936 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:51:02,967 - INFO - Relatï¿½rio de envios Sucesso para a unidade Matriz enviado por e-mail.
+2024-02-27 17:51:02,987 - INFO - Relatï¿½rio de envios Sucesso para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:51:02,987 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: registroXml() takes 3 positional arguments but 4 were given
+2024-02-27 17:53:22,526 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:53:22,554 - INFO - Relatï¿½rio de envios Sucesso para a unidade Matriz enviado por e-mail.
+2024-02-27 17:53:22,568 - INFO - Relatï¿½rio de envios Sucesso para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:53:22,568 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: registroXml() takes 3 positional arguments but 4 were given
+2024-02-27 17:53:59,377 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:53:59,701 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 17:53:59,741 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:53:59,770 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-27 17:53:59,798 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-27 17:56:14,039 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:56:14,081 - ERROR - Valor invï¿½lido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 17:56:14,112 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 17:56:14,144 - INFO - Relatï¿½rio de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-27 17:59:46,942 - ERROR - Valor invï¿½lido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 17:59:46,942 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: name 'matricula' is not defined
+2024-02-27 18:00:38,722 - ERROR - Ocorreu um erro ao gerar o relatï¿½rio de e-mail: enviarEmail() missing 3 required positional arguments: 'matricula', 'nome', and 'email'
+2024-02-27 18:03:39,319 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:03:39,658 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 18:03:39,688 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 18:03:39,724 - INFO - Relatï¿½rio de envios Problema para a unidade  enviado por e-mail.
+2024-02-27 18:05:06,340 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:05:06,381 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-27 18:05:06,413 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-27 18:05:06,445 - INFO - Relatï¿½rio de envios Problema para a unidade  enviado por e-mail.
+2024-02-27 18:08:30,077 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:08:30,093 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 18:08:30,141 - INFO - Relatório de envios corretos enviado por e-mail.
+2024-02-27 18:08:30,172 - INFO - Relatório de envios com problema enviado por e-mail.
+2024-02-27 18:11:20,074 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: enviarEmail() takes from 3 to 6 positional arguments but 7 were given
+2024-02-27 18:14:55,479 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:14:55,777 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 18:14:55,823 - INFO - Relatório de envios corretos enviado por e-mail.
+2024-02-27 18:14:55,855 - INFO - Relatório de envios com problema enviado por e-mail.
+2024-02-27 18:15:18,827 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:15:18,842 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 18:15:18,874 - INFO - Relatório de envios corretos enviado por e-mail.
+2024-02-27 18:15:18,905 - INFO - Relatório de envios com problema enviado por e-mail.
+2024-02-27 18:15:49,874 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-27 18:15:49,882 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-27 18:15:49,913 - INFO - Relatório de envios corretos enviado por e-mail.
+2024-02-27 18:15:49,929 - INFO - Relatório de envios com problema enviado por e-mail.
+2024-02-28 08:10:19,102 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:10:19,702 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-28 08:10:19,733 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:10:19,777 - INFO - Relatório de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-28 08:12:48,567 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:12:48,599 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:12:48,630 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:12:48,661 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:12:48,692 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:15:11,479 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:15:11,507 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:15:11,530 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:15:11,557 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:15:11,583 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:17:31,573 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:17:31,749 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:17:31,793 - INFO - Relatório de envios com Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:17:31,825 - INFO - Relatório de envios com Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:17:31,856 - INFO - Relatório de envios com Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:32:19,570 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:32:19,758 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:32:19,790 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:32:19,821 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:32:19,852 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:36:49,014 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:36:49,046 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:36:49,077 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:36:49,114 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:36:49,133 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:36:49,133 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:36:49.xml'
+2024-02-28 08:37:41,812 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:37:42,028 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:37:42,157 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:37:42,282 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:37:42,434 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:37:42,437 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:37:42.xml'
+2024-02-28 08:38:56,114 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:38:56,144 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:38:56,160 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:38:56,192 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:38:56,223 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:38:56,223 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:38:56,223 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:38:56.xml'
+2024-02-28 08:39:04,455 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:39:04,489 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:39:04,534 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:39:04,565 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:39:04,597 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:39:04,597 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:39:04,597 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:39:04.xml'
+2024-02-28 08:39:52,760 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:39:52,792 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:39:52,823 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:39:52,854 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:39:52,884 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:39:52,884 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:39:52,884 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:39:52.xml'
+2024-02-28 08:40:02,508 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:40:02,508 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:40:02,628 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:40:02,692 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:40:02,778 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:40:02,778 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:40:02,779 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:40:02.xml'
+2024-02-28 08:41:14,585 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:41:14,624 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:41:14,670 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:41:14,717 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:41:14,757 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:41:14,757 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:41:14,757 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:41:14.xml'
+2024-02-28 08:42:07,050 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:42:07,081 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:42:07,113 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:42:07,144 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:42:07,183 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:42:07,183 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:42:07,184 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: [Errno 22] Invalid argument: 'relatorioBoleto_xml\\relatorioSucesso_28-02-2024_08:42:07.xml'
+2024-02-28 08:43:01,928 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:43:02,086 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:43:02,103 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:43:02,134 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:43:02,165 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:43:02,165 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:43:02,165 - INFO - Envios corretos registrados em XML.
+2024-02-28 08:43:02,165 - INFO - Registrando envios incorretos em XML...
+2024-02-28 08:43:02,165 - INFO - Envios incorretos registrados em XML.
+2024-02-28 08:43:48,327 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:43:48,355 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:43:48,386 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:43:48,433 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:43:48,464 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:43:48,464 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:43:48,467 - INFO - Envios corretos registrados em XML.
+2024-02-28 08:43:48,467 - INFO - Registrando envios incorretos em XML...
+2024-02-28 08:43:48,471 - INFO - Envios incorretos registrados em XML.
+2024-02-28 08:45:55,909 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:45:55,935 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:45:55,969 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:45:56,001 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:45:56,034 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:45:56,035 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:45:56,035 - INFO - Envios corretos registrados em XML.
+2024-02-28 08:45:56,035 - INFO - Registrando envios incorretos em XML...
+2024-02-28 08:45:56,036 - INFO - Envios incorretos registrados em XML.
+2024-02-28 08:46:15,179 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 08:46:15,195 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 08:46:15,226 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 08:46:15,258 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 08:46:15,289 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 08:46:15,289 - INFO - Registrando envios corretos em XML...
+2024-02-28 08:46:15,305 - INFO - Envios corretos registrados em XML.
+2024-02-28 08:46:15,305 - INFO - Registrando envios incorretos em XML...
+2024-02-28 08:46:15,306 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:07:45,420 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:07:45,579 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:07:45,579 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-02-28 09:07:45,579 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-02-28 09:07:45,579 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:07:45,580 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:07:45,580 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:07:45,580 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:10:36,917 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:10:37,459 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:10:37,491 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:10:37,522 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 09:10:37,561 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 09:10:37,562 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:10:37,562 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:10:37,562 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:10:37,563 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:12:37,806 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:12:37,837 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:12:37,853 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:12:37,868 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:12:37,868 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:12:37,868 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:12:37,868 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:12:37,868 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:22:16,157 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: 'list' object has no attribute 'encode'
+2024-02-28 09:24:12,051 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'corpo_email' is not defined
+2024-02-28 09:24:33,314 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: 'list' object has no attribute 'encode'
+2024-02-28 09:26:46,443 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: 'list' object has no attribute 'encode'
+2024-02-28 09:31:28,550 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:31:28,721 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:31:28,737 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:31:28,756 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:31:28,756 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:31:28,756 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:31:28,756 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:31:28,769 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:34:03,219 - ERROR - Erro ao enviar o e-mail para mad@.com.br: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:34:03,251 - ERROR - Erro ao enviar o e-mail para maycon@gmailll.com: The domain name gmailll.com does not send email.
+2024-02-28 09:34:03,266 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:34:03,271 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:34:03,271 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:34:03,271 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:34:03,271 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:34:03,271 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:37:40,939 - ERROR - Erro ao enviar o e-mail para mad@.com.br: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:37:41,111 - ERROR - Erro ao enviar o e-mail para maycon@gmailll.com: The domain name gmailll.com does not send email.
+2024-02-28 09:37:41,131 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:37:41,149 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:37:41,149 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:37:41,149 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:37:41,149 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:37:41,151 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:38:35,925 - ERROR - Erro ao enviar o e-mail para mad@.com.br: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:38:35,956 - ERROR - Erro ao enviar o e-mail para maycon@gmailll.com: The domain name gmailll.com does not send email.
+2024-02-28 09:38:35,972 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:38:35,987 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:38:35,987 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:38:35,987 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:38:35,987 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:38:35,987 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:40:02,040 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:40:02,066 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:40:02,163 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:40:02,221 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:40:02,222 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:40:02,223 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:40:02,223 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:40:02,227 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:40:34,590 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:40:34,623 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:40:34,641 - ERROR - Ocorreu um erro ao gerar o relatório de envios Sucesso: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:40:34,658 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: 'utf8' is an invalid keyword argument for Compat32
+2024-02-28 09:40:34,658 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:40:34,659 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:40:34,660 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:40:34,660 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:41:03,804 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:41:03,820 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:41:03,852 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:41:03,899 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 09:41:03,934 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 09:41:03,934 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:41:03,934 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:41:03,934 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:41:03,934 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:42:03,373 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:42:03,389 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:42:03,420 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:42:03,452 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 09:42:03,498 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 09:42:03,498 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:42:03,498 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:42:03,498 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:42:03,498 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:42:10,571 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:42:10,603 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:42:10,650 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:42:10,936 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 09:42:11,221 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 09:42:11,222 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:42:11,224 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:42:11,224 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:42:11,224 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:47:24,464 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:47:24,632 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:47:24,662 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:47:24,691 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 09:47:24,720 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 09:47:24,720 - INFO - Registrando envios corretos em XML...
+2024-02-28 09:47:24,722 - INFO - Envios corretos registrados em XML.
+2024-02-28 09:47:24,722 - INFO - Registrando envios incorretos em XML...
+2024-02-28 09:47:24,726 - INFO - Envios incorretos registrados em XML.
+2024-02-28 09:50:53,651 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:50:53,680 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 09:50:53,710 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 09:50:53,710 - ERROR - Ocorreu um erro ao gerar o relatório de envios Problema: Causa do problema não especificada.
+2024-02-28 09:50:53,710 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: Causa do problema não especificada.
+2024-02-28 09:54:14,172 - ERROR - Valor inválido encontrado: An email address cannot have a period immediately after the @-sign.
+2024-02-28 09:54:14,338 - ERROR - Valor inválido encontrado: The domain name gmailll.com does not send email.
+2024-02-28 09:54:14,400 - INFO - Relatório de envios corretos enviado por e-mail.
+2024-02-28 09:54:14,431 - INFO - Relatório de envios com problema enviado por e-mail.
+2024-02-28 10:06:25,212 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 10:06:25,382 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 10:06:25,416 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 10:06:25,467 - INFO - Relatório de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-28 10:06:25,467 - INFO - Registrando envios corretos em XML...
+2024-02-28 10:06:25,467 - INFO - Envios corretos registrados em XML.
+2024-02-28 10:06:25,467 - INFO - Registrando envios incorretos em XML...
+2024-02-28 10:06:25,470 - INFO - Envios incorretos registrados em XML.
+2024-02-28 10:10:09,253 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 10:10:09,296 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 10:10:09,327 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 10:10:09,358 - INFO - Relatório de envios Problema para a unidade Outros enviado por e-mail.
+2024-02-28 10:10:09,358 - INFO - Registrando envios corretos em XML...
+2024-02-28 10:10:09,358 - INFO - Envios corretos registrados em XML.
+2024-02-28 10:10:09,358 - INFO - Registrando envios incorretos em XML...
+2024-02-28 10:10:09,371 - INFO - Envios incorretos registrados em XML.
+2024-02-28 10:12:48,791 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-28 10:12:49,361 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-28 10:12:49,407 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-28 10:12:49,441 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-28 10:12:49,458 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-28 10:12:49,458 - INFO - Registrando envios corretos em XML...
+2024-02-28 10:12:49,458 - INFO - Envios corretos registrados em XML.
+2024-02-28 10:12:49,458 - INFO - Registrando envios incorretos em XML...
+2024-02-28 10:12:49,476 - INFO - Envios incorretos registrados em XML.
+2024-02-29 09:44:22,816 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-02-29 09:44:23,152 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-02-29 09:44:23,201 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-02-29 09:44:23,244 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-02-29 09:44:23,282 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-02-29 09:44:23,282 - INFO - Registrando envios corretos em XML...
+2024-02-29 09:44:23,284 - INFO - Envios corretos registrados em XML.
+2024-02-29 09:44:23,284 - INFO - Registrando envios incorretos em XML...
+2024-02-29 09:44:23,288 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:00:05,970 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:00:07,062 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:00:07,181 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:00:07,226 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:00:07,306 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:00:07,306 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:00:07,307 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:00:07,308 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:00:07,309 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:01:26,530 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:01:26,568 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:01:26,601 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:01:26,635 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:01:26,667 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:01:26,667 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:01:26,668 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:01:26,668 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:01:26,668 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:34:13,017 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:34:13,356 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:34:13,356 - ERROR - Ocorreu um erro ao gerar o relatório de envios: can only concatenate list (not "str") to list
+2024-03-19 16:34:13,356 - ERROR - Ocorreu um erro ao gerar o relatório de envios: can only concatenate list (not "str") to list
+2024-03-19 16:34:13,356 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:34:13,357 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:34:13,357 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:34:13,357 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:36:24,886 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:36:24,920 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:36:24,920 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:36:24,920 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:36:24,920 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:36:24,921 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:36:24,921 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:36:24,921 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:40:05,567 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:40:05,727 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:40:05,727 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:40:05,727 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:40:05,727 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:40:05,728 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:40:05,728 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:40:05,728 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:41:12,530 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:41:12,574 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:41:12,574 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:41:12,574 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:41:12,574 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:41:12,575 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:41:12,575 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:41:12,575 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:41:24,510 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:41:24,547 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:41:24,547 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:41:24,547 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:41:24,547 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:41:24,549 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:41:24,550 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:41:24,550 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:43:27,025 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:43:27,061 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:43:27,062 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Sucesso: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:43:27,062 - ERROR - Ocorreu um erro ao gerar o relatório de envios com Problema: emailsPorUnidade() takes 0 positional arguments but 1 was given
+2024-03-19 16:43:27,062 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:43:27,062 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:43:27,062 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:43:27,063 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:44:56,719 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:44:56,760 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:44:56,806 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:44:56,851 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:44:56,883 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:44:56,883 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:44:56,883 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:44:56,883 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:44:56,884 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:48:29,503 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:48:30,107 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:48:30,107 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: gerarRelatorio() takes 2 positional arguments but 3 were given
+2024-03-19 16:49:45,312 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:49:45,355 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:49:45,355 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: gerarRelatorio() takes 2 positional arguments but 3 were given
+2024-03-19 16:53:58,426 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:53:59,820 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:53:59,859 - INFO - Relatório de envios Sucesso/Problema para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:53:59,887 - INFO - Relatório de envios Sucesso/Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:53:59,915 - INFO - Relatório de envios Sucesso/Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:53:59,915 - INFO - Registrando todos os envios em XML...
+2024-03-19 16:53:59,915 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'registroXml' is not defined
+2024-03-19 16:54:22,707 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:54:22,746 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:54:22,779 - INFO - Relatório de envios Sucesso/Problema para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:54:22,812 - INFO - Relatório de envios Sucesso/Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:54:22,841 - INFO - Relatório de envios Sucesso/Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:54:22,841 - INFO - Registrando todos os envios em XML...
+2024-03-19 16:54:22,841 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'registroXml' is not defined
+2024-03-19 16:54:22,930 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:54:22,960 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:54:22,988 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 16:54:23,016 - INFO - Relatório de envios Problema para a unidade Matriz enviado por e-mail.
+2024-03-19 16:54:23,047 - INFO - Relatório de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-03-19 16:54:23,047 - INFO - Registrando envios corretos em XML...
+2024-03-19 16:54:23,049 - INFO - Envios corretos registrados em XML.
+2024-03-19 16:54:23,049 - INFO - Registrando envios incorretos em XML...
+2024-03-19 16:54:23,049 - INFO - Envios incorretos registrados em XML.
+2024-03-19 16:58:59,975 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 16:59:00,490 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 16:59:00,526 - INFO - Relatório unificado de envios enviado por e-mail.
+2024-03-19 16:59:00,552 - INFO - Relatório unificado de envios enviado por e-mail.
+2024-03-19 17:01:15,103 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:01:15,683 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:01:15,725 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:01:15,757 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:01:15,789 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:02:48,634 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:02:48,679 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:02:48,724 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:02:48,765 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:02:48,801 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:04:36,511 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:04:36,677 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:04:36,706 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:04:36,737 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:04:36,768 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:04:36,865 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:04:36,902 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:04:36,928 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:04:36,955 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:04:36,982 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:04:36,982 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:04:36,983 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:04:36,983 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:04:36,984 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:06:22,051 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:06:22,092 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:06:22,124 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:06:22,155 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:06:22,185 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:06:52,184 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:06:52,224 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:06:52,258 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:06:52,288 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:06:52,317 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:06:52,402 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:06:52,439 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:06:52,484 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:06:52,514 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:06:52,546 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:06:52,546 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:06:52,547 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:06:52,548 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:06:52,549 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:08:01,193 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:08:01,236 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:08:01,263 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:08:01,289 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:08:01,316 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:08:01,408 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:08:01,444 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:08:01,468 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:08:01,493 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:08:01,518 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:08:01,518 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:08:01,518 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:08:01,519 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:08:01,519 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:09:15,231 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:09:15,248 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:09:15,275 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:09:15,308 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:09:15,339 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:09:15,432 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:09:15,472 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:09:15,505 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:09:15,541 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:09:15,572 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:09:15,572 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:09:15,572 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:09:15,572 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:09:15,573 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:09:37,020 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:09:37,542 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:09:37,583 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:09:37,611 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:09:37,638 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:09:37,716 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:09:37,755 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:09:37,783 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:09:37,813 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:09:37,837 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:09:37,837 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:09:37,838 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:09:37,838 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:09:37,839 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:10:25,251 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:10:25,287 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:10:25,312 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:10:25,339 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:10:25,364 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:10:25,436 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:10:25,448 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:10:25,472 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:10:25,497 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:10:25,523 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:10:25,523 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:10:25,524 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:10:25,524 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:10:25,524 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:12:02,435 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:12:02,479 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:12:02,513 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:12:02,541 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:12:02,568 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:12:02,653 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:12:02,670 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:12:02,703 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:12:02,737 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:12:02,769 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:12:02,769 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:12:02,770 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:12:02,770 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:12:02,774 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:15:03,390 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:15:03,994 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:15:04,030 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:15:04,054 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:15:04,078 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:15:04,158 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:15:04,158 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'e' is not defined
+2024-03-19 17:17:05,518 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:05,554 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:17:05,581 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:17:05,608 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:17:05,636 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:17:05,699 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:05,699 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:05,699 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'e' is not defined
+2024-03-19 17:17:46,291 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:46,336 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:17:46,367 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:17:46,397 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:17:46,424 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:17:46,511 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:46,511 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:17:46,547 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:17:46,552 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:17:46,581 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:17:46,581 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:17:46,582 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:17:46,582 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:17:46,582 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:18:18,781 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:18:18,796 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:18:18,828 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:18:18,875 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:18:18,915 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:18:18,974 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:18:18,992 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:18:19,023 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:18:19,055 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:18:19,086 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:18:19,086 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:18:19,101 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:18:19,101 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:18:19,101 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:20:47,203 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:20:47,362 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:20:47,400 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:20:47,435 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:20:47,465 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:20:47,560 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:20:47,560 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: name 'e' is not defined
+2024-03-19 17:21:08,494 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:21:08,534 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:21:08,564 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:21:08,599 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:21:08,629 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:21:08,714 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:21:08,749 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:21:08,782 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:21:08,811 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:21:08,841 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:21:08,841 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:21:08,841 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:21:08,841 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:21:08,845 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:22:56,999 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:22:57,037 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:22:57,064 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:22:57,086 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:22:57,117 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:22:57,217 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:22:57,254 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:22:57,285 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:22:57,310 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:22:57,335 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:22:57,335 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:22:57,335 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:22:57,336 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:22:57,336 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:25:29,703 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:25:29,746 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:25:29,773 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:25:29,799 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:25:29,826 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:25:29,970 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:25:30,007 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:25:30,038 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:25:30,065 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:25:30,093 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:25:30,093 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:25:30,094 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:25:30,094 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:25:30,096 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:25:40,537 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:25:40,559 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:25:40,592 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:25:40,635 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:25:40,665 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:25:40,731 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:25:40,766 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:25:40,790 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:25:40,815 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:25:40,839 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:25:40,839 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:25:40,840 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:25:40,840 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:25:40,844 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:30:15,458 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:30:16,056 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:30:16,101 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:30:16,132 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:30:16,159 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:30:23,127 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:30:23,166 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:30:23,198 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:30:23,231 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:30:23,261 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:31:50,568 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:31:50,607 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:31:50,635 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:31:50,662 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:31:50,691 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:31:57,290 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:31:57,307 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:31:57,385 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:31:57,414 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:31:57,441 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:31:57,534 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:31:57,575 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:31:57,606 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:31:57,690 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:31:57,722 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:31:57,723 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:31:57,724 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:31:57,724 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:31:57,728 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:33:36,091 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:33:36,131 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:33:36,173 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:33:36,212 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:33:36,236 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:33:36,340 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:33:36,379 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:33:36,408 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:33:36,438 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:33:36,468 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:33:36,468 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:33:36,469 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:33:36,469 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:33:36,473 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:34:01,249 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:34:01,286 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:34:01,315 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:34:01,346 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:34:01,371 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:34:01,453 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:34:01,485 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:34:01,509 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:34:01,534 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:34:01,563 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:34:01,563 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:34:01,566 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:34:01,566 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:34:01,570 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:35:53,312 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:35:53,475 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:35:53,519 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:35:53,550 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:35:53,580 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:35:53,660 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:35:53,673 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:35:53,698 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:35:53,725 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:35:53,757 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:35:53,757 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:35:53,758 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:35:53,758 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:35:53,759 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:37:13,478 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:37:13,513 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:37:13,545 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:37:13,570 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:37:13,615 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:37:13,691 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:37:13,724 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:37:13,748 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:37:13,774 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:37:13,795 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:37:13,795 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:37:13,795 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:37:13,795 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:37:13,795 - INFO - Envios incorretos registrados em XML.
+2024-03-19 17:40:11,733 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:40:11,775 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:40:11,818 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:40:11,852 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:40:11,884 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:40:11,982 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-03-19 17:40:12,022 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-03-19 17:40:12,054 - INFO - Relatório de envios para a unidade Bento Ribeiro enviado por e-mail.
+2024-03-19 17:40:12,086 - INFO - Relatório de envios para a unidade Matriz enviado por e-mail.
+2024-03-19 17:40:12,115 - INFO - Relatório de envios para a unidade Campo Grande enviado por e-mail.
+2024-03-19 17:40:12,115 - INFO - Registrando envios corretos em XML...
+2024-03-19 17:40:12,116 - INFO - Envios corretos registrados em XML.
+2024-03-19 17:40:12,116 - INFO - Registrando envios incorretos em XML...
+2024-03-19 17:40:12,119 - INFO - Envios incorretos registrados em XML.
