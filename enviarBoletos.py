@@ -3,7 +3,7 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email_validator import validate_email, EmailNotValidError
-from db import pegaContatosDB, inserirToken, pegaContatosTeste
+from db import pegaContatosDB, inserirToken, pegaContatosTeste, atualizarEnvio
 import sys
 
 # Obtendo os argumentos da linha de comando
@@ -24,7 +24,7 @@ contatos = pegaContatosTeste(mat_prefix, cot_prefix)
 
 # Se não houver contatos disponíveis, exiba uma mensagem e saia
 if not contatos:
-    print("Não foram encontrados contatos para enviar boletos.")
+    print("Não foram encontrados contatos para enviar boletos. Todos já foram enviados.")
     sys.exit(1)
 
 
@@ -218,6 +218,7 @@ try:
         enviado = enviarEmail(email, assunto, mensagem)
         if enviado:
             enviosCorretos.append({'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
+            atualizarEnvio(mat)
         else:
             if email not in [envio['destinatario'] for envio in enviosIncorretos]:
                 enviosIncorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade})
@@ -282,6 +283,7 @@ try:
         enviado = enviarEmail(email, assunto, mensagem)
         if enviado:
             enviosCorretos.append({'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
+            
         else:
             if email not in [envio['destinatario'] for envio in enviosIncorretos]:
                 enviosIncorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade, 'erro': 'Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.'})

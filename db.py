@@ -22,6 +22,24 @@ def inserirToken(mat, token):
         if conn is not None:
             conn.close()
 
+def atualizarEnvio(mat):
+    conn = None
+    try:
+        conn = psycopg2.connect(
+            dbname="mydb",
+            user="postgres",
+            password="postgres",
+            host="localhost"
+        )
+        cursor = conn.cursor()
+        cursor.execute("UPDATE boletos_geral SET envio = now() WHERE mat = %s", (mat,))
+        conn.commit()
+    except psycopg2.Error as e:
+        logger.error("Erro ao atualizar coluna 'envio' no PostgreSQL: %s", e)
+    finally:
+        if conn is not None:
+            conn.close()
+
 def extrairEmails(camposEmail):
     emails = []
     for campo in camposEmail:
@@ -43,20 +61,13 @@ def pegaContatosDB(mat_prefix=None, cot_prefix=None):
         cursor = conn.cursor()
 
         if mat_prefix is not None and cot_prefix is not None:
-            # Execute a consulta SQL com os prefixos fornecidos
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s", (mat_prefix, cot_prefix))
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL", (mat_prefix, cot_prefix))
         else:
-            # Execute a consulta SQL para recuperar todos os contatos
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral")
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL")
 
         rows = cursor.fetchall()
 
-        # Imprime os nomes das colunas retornadas pela consulta SQL
-        colunas = [desc[0] for desc in cursor.description]
-        logger.info("Colunas retornadas pela consulta SQL: %s", colunas)
-
         for row in rows:
-            logger.debug("Linha retornada da consulta SQL: %s", row)
             mat = row[0]
             nome = row[1]
             cot = row[2]
@@ -75,26 +86,44 @@ def pegaContatosDB(mat_prefix=None, cot_prefix=None):
 
     return contatos
 
+
 def pegaContatosTeste(mat_prefix=None, cot_prefix=None):
-    contatos = [
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '061515151', 'nome': 'Teste', 'cot': '12','email': 'mad@.com.br'},
-        {'mat': '081954547', 'nome': 'Teste', 'cot': '03','email': 'maycon@gmailll.com'}
-    ]
-    
-    if mat_prefix is None and cot_prefix is None:
-        return contatos
-    else:
-        contatos_filtrados = [contato for contato in contatos if (mat_prefix is None or contato['mat'][:2] == mat_prefix) and (cot_prefix is None or contato['cot'] == cot_prefix)]
-        return contatos_filtrados
+    contatos = []
+    conn = None
+    cursor = None
+    try:
+        conn = psycopg2.connect(
+            dbname="mydb",
+            user="postgres",
+            password="postgres",
+            host="localhost"
+        )
+        cursor = conn.cursor()
 
+        if mat_prefix is not None and cot_prefix is not None:
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL", (mat_prefix, cot_prefix))
+        else:
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL")
 
+        rows = cursor.fetchall()
 
+        for row in rows:
+            mat = row[0]
+            nome = row[1]
+            cot = row[2]
+            boleto = row[3]
+            linha = row[4]
+            dataGerado = row[5]
+            email_str = row[6]
+            emails = [email.strip() for email in email_str.split(',')]
+            for email in emails:
+                contatos.append({'mat': mat, 'nome': nome, 'cot': cot, 'boleto': boleto, 'linha': linha, 'dataGerado': dataGerado, 'email': email.strip()})
+    except psycopg2.Error as e:
+        logger.error("Erro ao conectar ao PostgreSQL: %s", e)
+    finally:
+        if cursor is not None:
+            cursor.close()
+        if conn is not None:
+            conn.close()
 
-
-
+    return contatos
