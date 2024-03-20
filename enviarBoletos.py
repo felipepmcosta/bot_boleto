@@ -37,9 +37,6 @@ SMTP_PASSWORD = 'EchH464%'
 # Constante para o remetente padrão
 EMAIL_SENDER = 'boleto@smce.rio.br'
 
-# Constante para o endereço de resposta padrão
-EMAIL_REPLY_TO = 'maycon.csc@smrede.com.br'
-
 # Variável de controle para pausar o envio de e-mails
 envioPausado = False
 
@@ -87,20 +84,20 @@ def pegaUnidade(matricula):
 def emailsPorUnidade():
     # Dicionário mapeando cada unidade para seus emails correspondentes
     emailsUnidade = {
-        "Bento Ribeiro": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Madureira": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Santa Cruz": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Cascadura": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Taquara": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Nilópolis": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Seropédica": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Barra da Tijuca": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Campo Grande": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Mangueira": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Maricá": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Ilha do Governador": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Freguesia": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"],
-        "Recreio dos Bandeirantes": ["yoshichaolan@gmail.com", "mayconcartoon@gmail.com"]
+        "Bento Ribeiro": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Madureira": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Santa Cruz": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Cascadura": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Taquara": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Nilópolis": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Seropédica": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Barra da Tijuca": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Campo Grande": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Mangueira": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Maricá": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Ilha do Governador": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Freguesia": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"],
+        "Recreio dos Bandeirantes": ["maycon.csc@smrede.com.br", "boleto@smce.rio.br"]
     }
     return emailsUnidade
 
@@ -118,7 +115,6 @@ def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
         msg['To'] = destinatario
         if emailsUnidade:
             msg['Cc'] = ", ".join(emailsUnidade)  # Adiciona os emails da unidade como cópia
-        msg['Reply-to'] = EMAIL_REPLY_TO
         msg['Subject'] = assunto
         msg.attach(MIMEText(mensagem, 'html'))
         s.send_message(msg)
@@ -188,7 +184,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
 </html>
 """
             assunto = f"Relatório de Envios - Unidade {unidade}"
-            enviado = enviarEmail(EMAIL_REPLY_TO, assunto, corpoEmail)
+            enviado = enviarEmail(assunto, corpoEmail)
             if enviado:
                 logging.info(f'Relatório de envios para a unidade {unidade} enviado por e-mail.')
             else:
