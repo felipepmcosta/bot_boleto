@@ -4,6 +4,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email_validator import validate_email, EmailNotValidError
 from db import pegaContatosDB, inserirToken, pegaContatosTeste
+import sys
+
+# Obtendo os argumentos da linha de comando
+args = sys.argv[1:]  # Ignora o primeiro argumento, que é o nome do script
+
+# Verificando se foram fornecidos argumentos suficientes
+if len(args) < 2:
+    print("Por favor, forneça os argumentos 'mat_prefix' e 'cot_prefix'")
+    sys.exit(1)
+
+# Atribuindo os argumentos a 'mat_prefix' e 'cot_prefix'
+mat_prefix = args[0]
+cot_prefix = args[1]
 
 # Constantes para configurações de e-mail
 SMTP_HOST = 'smtp.smce.rio.br'
@@ -24,7 +37,7 @@ envioPausado = False
 logging.basicConfig(filename='email_logs.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-link = "http://192.168.1.214:3333/valida_boleto/"
+link = "https://boletos.santamonicarede.com.br/"
 
 def gerarToken(cot, mat):
     # Concatenar os dados em uma única string
@@ -174,7 +187,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
         logging.error(f'Ocorreu um erro ao gerar os relatórios de envio de e-mail por unidade: {ex}')
 
 try:
-    contatos = pegaContatosTeste()
+    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
     enviosCorretos = []
     enviosIncorretos = []
     for contato in contatos:
@@ -238,7 +251,7 @@ def registroXml(envios, tipoRelatorio, dataHora):
 
 
 try:
-    contatos = pegaContatosTeste()
+    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
     mensagemTemplate = lerTemplate('msg.html')
     enviosCorretos = []
     enviosIncorretos = []

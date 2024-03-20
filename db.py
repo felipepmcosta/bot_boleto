@@ -1,6 +1,7 @@
 import psycopg2, logging
 
 # Configurando o sistema de logging para o módulo db.py
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def inserirToken(mat, token):
@@ -29,7 +30,7 @@ def extrairEmails(camposEmail):
             
     return [email.strip() for email in emails if email.strip()]
 
-def pegaContatosDB():
+def pegaContatosDB(mat_prefix, cot_prefix):
     contatos = []
     conn = None
     try:
@@ -42,7 +43,8 @@ def pegaContatosDB():
         cursor = conn.cursor()
 
         # Execute a consulta SQL para selecionar os dados necessários
-        cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral")
+        # Adicione a condição WHERE para filtrar os resultados com base nos dois primeiros dígitos de mat e cot
+        cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s", (mat_prefix, cot_prefix))
         rows = cursor.fetchall()
 
         # Imprime os nomes das colunas retornadas pela consulta SQL
@@ -69,14 +71,22 @@ def pegaContatosDB():
 
     return contatos
 
-def pegaContatosTeste():
+def pegaContatosTeste(mat_prefix, cot_prefix):
     contatos = [
         {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
-        {'mat': '061515151', 'nome': 'Teste', 'cot': '01','email': 'mad@.com.br'},
-        {'mat': '081954547', 'nome': 'Teste', 'cot': '01','email': 'maycon@gmailll.com'}
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '061515151', 'nome': 'Teste', 'cot': '12','email': 'mad@.com.br'},
+        {'mat': '081954547', 'nome': 'Teste', 'cot': '03','email': 'maycon@gmailll.com'}
     ]
+    
+    # Filtrando os contatos com base nos dois primeiros dígitos de mat e cot
+    contatos_filtrados = [contato for contato in contatos if contato['mat'][:2] == mat_prefix and contato['cot'] == cot_prefix]
 
-    return contatos
+    return contatos_filtrados
 
 
 
