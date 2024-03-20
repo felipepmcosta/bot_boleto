@@ -29,7 +29,7 @@ def atualizarEnvio(mat):
             dbname="mydb",
             user="postgres",
             password="postgres",
-            host="172.28.160.1"
+            host="192.168.1.213"
         )
         cursor = conn.cursor()
         cursor.execute("UPDATE boletos_geral SET envio = now() WHERE mat = %s", (mat,))
@@ -96,7 +96,7 @@ def pegaContatosTeste(mat_prefix=None, cot_prefix=None):
             dbname="mydb",
             user="postgres",
             password="postgres",
-            host="172.28.160.1"
+            host="192.168.1.213"
         )
         cursor = conn.cursor()
 
