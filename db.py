@@ -26,10 +26,10 @@ def atualizarEnvio(mat):
     conn = None
     try:
         conn = psycopg2.connect(
-            dbname="mydb",
+            dbname="BOLETOS",
             user="postgres",
             password="postgres",
-            host="192.168.1.213"
+            host="192.168.1.163"
         )
         cursor = conn.cursor()
         cursor.execute("UPDATE boletos_geral SET envio = now() WHERE mat = %s", (mat,))
@@ -93,10 +93,10 @@ def pegaContatosTeste(mat_prefix=None, cot_prefix=None):
     cursor = None
     try:
         conn = psycopg2.connect(
-            dbname="mydb",
+            dbname="BOLETOS",
             user="postgres",
             password="postgres",
-            host="192.168.1.213"
+            host="192.168.1.163"
         )
         cursor = conn.cursor()
 
