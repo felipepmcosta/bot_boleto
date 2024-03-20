@@ -30,7 +30,7 @@ def extrairEmails(camposEmail):
             
     return [email.strip() for email in emails if email.strip()]
 
-def pegaContatosDB(mat_prefix, cot_prefix):
+def pegaContatosDB(mat_prefix=None, cot_prefix=None):
     contatos = []
     conn = None
     try:
@@ -42,9 +42,13 @@ def pegaContatosDB(mat_prefix, cot_prefix):
         )
         cursor = conn.cursor()
 
-        # Execute a consulta SQL para selecionar os dados necessários
-        # Adicione a condição WHERE para filtrar os resultados com base nos dois primeiros dígitos de mat e cot
-        cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s", (mat_prefix, cot_prefix))
+        if mat_prefix is not None and cot_prefix is not None:
+            # Execute a consulta SQL com os prefixos fornecidos
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s", (mat_prefix, cot_prefix))
+        else:
+            # Execute a consulta SQL para recuperar todos os contatos
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral")
+
         rows = cursor.fetchall()
 
         # Imprime os nomes das colunas retornadas pela consulta SQL
@@ -71,7 +75,7 @@ def pegaContatosDB(mat_prefix, cot_prefix):
 
     return contatos
 
-def pegaContatosTeste(mat_prefix, cot_prefix):
+def pegaContatosTeste(mat_prefix=None, cot_prefix=None):
     contatos = [
         {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
         {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
@@ -83,10 +87,11 @@ def pegaContatosTeste(mat_prefix, cot_prefix):
         {'mat': '081954547', 'nome': 'Teste', 'cot': '03','email': 'maycon@gmailll.com'}
     ]
     
-    # Filtrando os contatos com base nos dois primeiros dígitos de mat e cot
-    contatos_filtrados = [contato for contato in contatos if contato['mat'][:2] == mat_prefix and contato['cot'] == cot_prefix]
-
-    return contatos_filtrados
+    if mat_prefix is None and cot_prefix is None:
+        return contatos
+    else:
+        contatos_filtrados = [contato for contato in contatos if (mat_prefix is None or contato['mat'][:2] == mat_prefix) and (cot_prefix is None or contato['cot'] == cot_prefix)]
+        return contatos_filtrados
 
 
 

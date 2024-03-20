@@ -11,12 +11,22 @@ args = sys.argv[1:]  # Ignora o primeiro argumento, que é o nome do script
 
 # Verificando se foram fornecidos argumentos suficientes
 if len(args) < 2:
-    print("Por favor, forneça os argumentos 'mat_prefix' e 'cot_prefix'")
+    print("Os argumentos 'mat_prefix' e 'cot_prefix' não foram fornecidos. Enviando boletos para todos os contatos disponíveis...")
+    mat_prefix = None
+    cot_prefix = None
+else:
+    # Atribuindo os argumentos a 'mat_prefix' e 'cot_prefix'
+    mat_prefix = args[0]
+    cot_prefix = args[1]
+
+# Obtendo os contatos com base nos dois primeiros dígitos de 'mat' e 'cot' da função pegaContatosDB()
+contatos = pegaContatosTeste(mat_prefix, cot_prefix)
+
+# Se não houver contatos disponíveis, exiba uma mensagem e saia
+if not contatos:
+    print("Não foram encontrados contatos para enviar boletos.")
     sys.exit(1)
 
-# Atribuindo os argumentos a 'mat_prefix' e 'cot_prefix'
-mat_prefix = args[0]
-cot_prefix = args[1]
 
 # Constantes para configurações de e-mail
 SMTP_HOST = 'smtp.smce.rio.br'
