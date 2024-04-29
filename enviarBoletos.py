@@ -1,4 +1,4 @@
-import os, smtplib, logging, hashlib, datetime, re, traceback   
+import os, smtplib, logging, hashlib, datetime, re, traceback
 from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -49,10 +49,10 @@ link = "https://boletos.santamonicarede.com.br/"
 def gerarToken(cot, mat):
     # Concatenar os dados em uma única string
     dadosConcatenados = f"{cot}{mat}"
-    
+
     # Calcular o hash MD5 da string concatenada com o link
     hash_md5 = hashlib.md5((dadosConcatenados).encode()).hexdigest()
-    
+
     return hash_md5
 
 def lerTemplate(filename):
@@ -72,7 +72,7 @@ def pegaUnidade(matricula):
         "09": "Seropédica",
         "10": "Barra da Tijuca",
         "11": "Campo Grande",
-        "13": "Mangueira", 
+        "13": "Mangueira",
         "14": "Maricá",
         "15": "Ilha do Governador",
         "16": "Freguesia",
@@ -120,7 +120,7 @@ def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
         s.send_message(msg)
         s.quit()
         return True
-    
+
     except (smtplib.SMTPAuthenticationError, smtplib.SMTPException, ValueError) as e:
         logging.error(f'Erro ao enviar o e-mail: {str(e)}')
         return False
@@ -279,11 +279,11 @@ try:
         enviado = enviarEmail(email, assunto, mensagem)
         if enviado:
             enviosCorretos.append({'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
-            
+
         else:
             if email not in [envio['destinatario'] for envio in enviosIncorretos]:
                 enviosIncorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade, 'erro': 'Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.'})
-    
+
     relatorioPorUnidade(enviosCorretos, "Sucesso")
     relatorioPorUnidade(enviosIncorretos, "Problema")
     # Obtendo a data e hora atual
