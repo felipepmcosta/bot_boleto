@@ -1,0 +1,23 @@
+2024-05-20 11:52:28,988 - ERROR - Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.
+2024-05-20 11:52:30,092 - ERROR - Erro ao enviar o e-mail: The domain name gmailll.com does not send email.
+2024-05-20 11:52:30,146 - INFO - Relatï¿½rio de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-05-20 11:52:30,195 - INFO - Relatï¿½rio de envios Problema para a unidade Matriz enviado por e-mail.
+2024-05-20 11:52:30,232 - INFO - Relatï¿½rio de envios Problema para a unidade Campo Grande enviado por e-mail.
+2024-05-20 11:52:30,232 - INFO - Registrando envios corretos em XML...
+2024-05-20 11:52:30,237 - INFO - Envios corretos registrados em XML.
+2024-05-20 11:52:30,237 - INFO - Registrando envios incorretos em XML...
+2024-05-20 11:52:30,238 - INFO - Envios incorretos registrados em XML.
+2024-05-20 11:56:09,459 - ERROR - Ocorreu um erro ao gerar o relatório de e-mail: 'utf8' is an invalid keyword argument for Compat32
+2024-05-20 12:00:31,203 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-05-20 12:00:31,243 - INFO - Relatório de envios Sucesso para a unidade Matriz enviado por e-mail.
+2024-05-20 12:00:31,283 - INFO - Relatório de envios Sucesso para a unidade Campo Grande enviado por e-mail.
+2024-05-20 12:00:31,283 - INFO - Registrando envios corretos em XML...
+2024-05-20 12:00:31,284 - INFO - Envios corretos registrados em XML.
+2024-05-20 12:00:31,284 - INFO - Registrando envios incorretos em XML...
+2024-05-20 12:00:31,285 - INFO - Envios incorretos registrados em XML.
+2024-05-20 12:02:43,021 - INFO - Colunas retornadas pela consulta SQL: ['mat', 'nome', 'cot', 'boleto', 'digitavel', 'created_at', 'email']
+2024-05-20 12:02:45,830 - INFO - Relatório de envios Sucesso para a unidade Bento Ribeiro enviado por e-mail.
+2024-05-20 12:02:45,830 - INFO - Registrando envios corretos em XML...
+2024-05-20 12:02:45,831 - INFO - Envios corretos registrados em XML.
+2024-05-20 12:02:45,831 - INFO - Registrando envios incorretos em XML...
+2024-05-20 12:02:45,832 - INFO - Envios incorretos registrados em XML.

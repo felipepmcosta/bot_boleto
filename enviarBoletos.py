@@ -20,7 +20,7 @@ else:
     cot_prefix = args[1]
 
 # Obtendo os contatos com base nos dois primeiros dígitos de 'mat' e 'cot' da função pegaContatosDB()
-contatos = pegaContatosTeste(mat_prefix, cot_prefix)
+contatos = pegaContatosDB(mat_prefix, cot_prefix)
 
 # Se não houver contatos disponíveis, exiba uma mensagem e saia
 if not contatos:
@@ -41,7 +41,7 @@ EMAIL_SENDER = 'boleto@smce.rio.br'
 envioPausado = False
 
 # Configuração do sistema de logging
-logging.basicConfig(filename='email_logs.log', level=logging.INFO,
+logging.basicConfig(filename='emails_status.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 link = "https://boletos.santamonicarede.com.br/"
@@ -101,18 +101,21 @@ def emailsPorUnidade():
     }
     return emailsUnidade
 
+modo_teste = True
+
 def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
     try:
-        if not re.match(r"[^@]+@[^@]+\.[^@]+", destinatario):
-            raise ValueError(f"O email '{destinatario}' não está em um formato válido.")
-        if not validate_email(destinatario):
-            raise ValueError(f"O domínio do email '{destinatario}' não é válido.")
+        destinatario_temporario = "maycon.csc@smrede.com.br"  # Endereço temporário
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", destinatario_temporario):
+            raise ValueError(f"O email '{destinatario_temporario}' não está em um formato válido.")
+        if not validate_email(destinatario_temporario):
+            raise ValueError(f"O domínio do email '{destinatario_temporario}' não é válido.")
         s = smtplib.SMTP(host=SMTP_HOST, port=SMTP_PORT)
         s.starttls()
         s.login(SMTP_USERNAME, SMTP_PASSWORD)
         msg = MIMEMultipart()
         msg['From'] = EMAIL_SENDER
-        msg['To'] = destinatario
+        msg['To'] = destinatario_temporario  # Usando o destinatário temporário
         if emailsUnidade:
             msg['Cc'] = ", ".join(emailsUnidade)  # Adiciona os emails da unidade como cópia
         msg['Subject'] = assunto
@@ -121,9 +124,10 @@ def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
         s.quit()
         return True
 
-    except (smtplib.SMTPAuthenticationError, smtplib.SMTPException, ValueError) as e:
-        logging.error(f'Erro ao enviar o e-mail: {str(e)}')
+    except Exception as e:
+        logging.error(f'Erro ao enviar o e-mail para {destinatario}: {str(e)}')
         return False
+
 
 def relatorioPorUnidade(envios, tipoRelatorio):
     try:
@@ -152,7 +156,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
         <p>Total de Envios com Sucesso: {total_sucesso}</p>
         <p>Total de Envios com Problema: {total_problema}</p>
 """
-            # Adicionar tabela apenas se houver envios com problema
+            # Adicionando tabela apenas se houver envios com problema
             if total_problema > 0:
                 corpoEmail += """\
         <p>Aqui estão os detalhes dos envios com problema:</p>
@@ -164,6 +168,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
                 <th>Email</th>
                 <th>Data de Envio</th>
                 <th>Status</th>
+            </tr>
 """
                 for idx, envio in enumerate(enviosUnidade['problema'], start=1):
                     corpoEmail += f"""\
@@ -184,7 +189,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
 </html>
 """
             assunto = f"Relatório de Envios - Unidade {unidade}"
-            enviado = enviarEmail(assunto, corpoEmail)
+            enviado = enviarEmail(enviosUnidade['destinatario'], assunto, corpoEmail)  # Passando a mensagem correta
             if enviado:
                 logging.info(f'Relatório de envios para a unidade {unidade} enviado por e-mail.')
             else:
@@ -193,7 +198,7 @@ def relatorioPorUnidade(envios, tipoRelatorio):
         logging.error(f'Ocorreu um erro ao gerar os relatórios de envio de e-mail por unidade: {ex}')
 
 try:
-    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
+    contatos = pegaContatosDB(mat_prefix, cot_prefix)
     enviosCorretos = []
     enviosIncorretos = []
     for contato in contatos:
@@ -256,9 +261,8 @@ def registroXml(envios, tipoRelatorio, dataHora):
         with open(caminhoArquivo, "w", encoding="utf-8") as file:
             file.write(f'Ocorreu um erro ao gerar o relatório XML: {ex}')
 
-
 try:
-    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
+    contatos = pegaContatosDB(mat_prefix, cot_prefix)
     mensagemTemplate = lerTemplate('msg.html')
     enviosCorretos = []
     enviosIncorretos = []

@@ -61,9 +61,9 @@ def pegaContatosDB(mat_prefix=None, cot_prefix=None):
         cursor = conn.cursor()
 
         if mat_prefix is not None and cot_prefix is not None:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL", (mat_prefix, cot_prefix))
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL LIMIT 10", (mat_prefix, cot_prefix))
         else:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL")
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL LIMIT 10")
 
         rows = cursor.fetchall()
 
@@ -87,43 +87,11 @@ def pegaContatosDB(mat_prefix=None, cot_prefix=None):
     return contatos
 
 
-def pegaContatosTeste(mat_prefix=None, cot_prefix=None):
-    contatos = []
-    conn = None
-    cursor = None
-    try:
-        conn = psycopg2.connect(
-            dbname="BOLETOS",
-            user="postgres",
-            password="postgres",
-            host="192.168.1.163"
-        )
-        cursor = conn.cursor()
-
-        if mat_prefix is not None and cot_prefix is not None:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL", (mat_prefix, cot_prefix))
-        else:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL")
-
-        rows = cursor.fetchall()
-
-        for row in rows:
-            mat = row[0]
-            nome = row[1]
-            cot = row[2]
-            boleto = row[3]
-            linha = row[4]
-            dataGerado = row[5]
-            email_str = row[6]
-            emails = [email.strip() for email in email_str.split(',')]
-            for email in emails:
-                contatos.append({'mat': mat, 'nome': nome, 'cot': cot, 'boleto': boleto, 'linha': linha, 'dataGerado': dataGerado, 'email': email.strip()})
-    except psycopg2.Error as e:
-        logger.error("Erro ao conectar ao PostgreSQL: %s", e)
-    finally:
-        if cursor is not None:
-            cursor.close()
-        if conn is not None:
-            conn.close()
+def pegaContatosTeste():
+    contatos = [
+        {'mat': '011503098', 'nome': 'Teste', 'cot': '01','email': 'maycon.csc@smrede.com.br'},
+        {'mat': '999999999', 'nome': 'Teste', 'cot': '01','email': 'mad@.com.br'},
+        {'mat': '111111111', 'nome': 'Teste', 'cot': '01','email': 'maycon@gmailll.com'}
+    ]
 
     return contatos
