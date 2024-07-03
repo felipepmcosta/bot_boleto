@@ -104,10 +104,11 @@ def emailsPorUnidade():
 def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
     try:
         destinatario_temporario = "maycon.csc@smrede.com.br"
-        if not re.match(r"[^@]+@[^@]+\.[^@]+", destinatario):
-            raise ValueError(f"O email '{destinatario}' não está em um formato válido.")
-        if not validate_email(destinatario):
-            raise ValueError(f"O domínio do email '{destinatario}' não é válido.")
+        # Dividindo vários endereços de e-mail e removendo strings vazias
+        destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
+        for destinatario in destinatarios:
+            if not validate_email(destinatario):
+                raise ValueError(f"O email '{destinatario}' não está em um formato válido.")
         s = smtplib.SMTP(host=SMTP_HOST, port=SMTP_PORT)
         s.starttls()
         s.login(SMTP_USERNAME, SMTP_PASSWORD)
@@ -126,36 +127,36 @@ def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
         logging.error(f'Erro ao enviar o e-mail: {str(e)}')
         return False
 
-def relatorioPorUnidade(envios, tipoRelatorio, destinatario_temporario):
+def relatorio_por_unidade(envios, tipo_relatorio, destinatario_temporario):
     try:
-        enviosPorUnidade = {}
+        envios_por_unidade = {}
         for envio in envios:
             unidade = envio.get('unidade', 'Outros')
-            if unidade not in enviosPorUnidade:
-                enviosPorUnidade[unidade] = {'sucesso': [], 'problema': []}
-            if tipoRelatorio == "Sucesso":
-                enviosPorUnidade[unidade]['sucesso'].append(envio)
-            elif tipoRelatorio == "Problema":
-                enviosPorUnidade[unidade]['problema'].append(envio)
+            if unidade not in envios_por_unidade:
+                envios_por_unidade[unidade] = {'sucesso': [], 'problema': []}
+            if tipo_relatorio == "Sucesso":
+                envios_por_unidade[unidade]['sucesso'].append(envio)
+            elif tipo_relatorio == "Problema":
+                envios_por_unidade[unidade]['problema'].append(envio)
 
         # Criando relatório por unidade
-        for unidade, enviosUnidade in enviosPorUnidade.items():
-            dataHoraAtual = datetime.datetime.now()
-            total_sucesso = len(enviosUnidade['sucesso'])
-            total_problema = len(enviosUnidade['problema'])
-            corpoEmail = f"""\
+        for unidade, envios_unidade in envios_por_unidade.items():
+            data_hora_atual = datetime.datetime.now()
+            total_sucesso = len(envios_unidade['sucesso'])
+            total_problema = len(envios_unidade['problema'])
+            corpo_email = f"""\
 <html>
     <head></head>
     <body>
         <p>Relatório de Envios - Unidade {unidade}</p>
-        <p>Data do Relatório: {dataHoraAtual.strftime("%d/%m/%Y")}</p>
-        <p>Hora do Relatório: {dataHoraAtual.strftime("%H:%M:%S")}</p>
+        <p>Data do Relatório: {data_hora_atual.strftime("%d/%m/%Y")}</p>
+        <p>Hora do Relatório: {data_hora_atual.strftime("%H:%M:%S")}</p>
         <p>Total de Envios com Sucesso: {total_sucesso}</p>
         <p>Total de Envios com Problema: {total_problema}</p>
 """
             # Adicionar tabela apenas se houver envios com problema
             if total_problema > 0:
-                corpoEmail += """\
+                corpo_email += """\
         <p>Aqui estão os detalhes dos envios com problema:</p>
         <table border='1' cellpadding='5' style='border-collapse: collapse; text-align: center;'>
             <tr style='background-color: #120a8f; color: white;'>
@@ -166,26 +167,26 @@ def relatorioPorUnidade(envios, tipoRelatorio, destinatario_temporario):
                 <th>Data de Envio</th>
                 <th>Status</th>
 """
-                for idx, envio in enumerate(enviosUnidade['problema'], start=1):
-                    corpoEmail += f"""\
+                for idx, envio in enumerate(envios_unidade['problema'], start=1):
+                    corpo_email += f"""\
             <tr style='background-color: #ffeac4;'>
                 <td>{idx}</td>
                 <td>{envio['matricula']}</td>
                 <td>{envio['nome']}</td>
                 <td>{envio['destinatario']}</td>
-                <td>{envio['dataHora']}</td>
+                <td>{envio['data_hora']}</td>
                 <td>Problema</td>
             </tr>
 """
-                corpoEmail += """\
+                corpo_email += """\
         </table>
 """
-            corpoEmail += """\
+            corpo_email += """\
     </body>
 </html>
 """
             assunto = f"Relatório de Envios - Unidade {unidade}"
-            enviado = enviarEmail(destinatario_temporario, assunto, corpoEmail)
+            enviado = enviarEmail(destinatario_temporario, assunto, corpo_email)  # Aqui passamos a mensagem como argumento
             if enviado:
                 logging.info(f'Relatório de envios para a unidade {unidade} enviado por e-mail.')
             else:
@@ -193,10 +194,11 @@ def relatorioPorUnidade(envios, tipoRelatorio, destinatario_temporario):
     except Exception as ex:
         logging.error(f'Ocorreu um erro ao gerar os relatórios de envio de e-mail por unidade: {ex}')
 
+
 try:
-    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
-    enviosCorretos = []
-    enviosIncorretos = []
+    contatos = pegaContatosDB(mat_prefix, cot_prefix)
+    envio_corretos = []
+    envio_incorretos = []
     for contato in contatos:
         if envioPausado:
             logging.info('Envio de e-mails pausado.')
@@ -209,32 +211,32 @@ try:
         token = gerarToken(cot, mat)
         inserirToken(mat, token)
         linkToken = f"{link}{token}"
-        mensagemTemplate = lerTemplate('msg.html')
-        mensagem = mensagemTemplate.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
+        mensagem_template = lerTemplate('msg.html')
+        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
         assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
         enviado = enviarEmail(email, assunto, mensagem)
         if enviado:
-            enviosCorretos.append({'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
+            envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
             atualizarEnvio(mat)
         else:
-            if email not in [envio['destinatario'] for envio in enviosIncorretos]:
-                enviosIncorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade})
-    relatorioPorUnidade(enviosCorretos, "Sucesso")
-    relatorioPorUnidade(enviosIncorretos, "Problema")
+            if email not in [envio['destinatario'] for envio in envio_incorretos]:
+                envio_incorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade})
+    relatorio_por_unidade(envio_corretos, "Sucesso", destinatario_temporario="maycon.csc@smrede.com.br")
+    relatorio_por_unidade(envio_incorretos, "Problema", destinatario_temporario="maycon.csc@smrede.com.br")
+
 except Exception as ex:
     logging.error('Ocorreu um erro ao gerar os relatórios de envio de e-mail: %s', ex)
 
-
-def registroXml(envios, tipoRelatorio, dataHora):
+def registro_xml(envios, tipo_relatorio, data_hora):
     try:
         # Obtendo a data e hora para incluir no título do arquivo
-        data = dataHora.split()[0]  # Obtém apenas a parte da data
-        hora = dataHora.split()[1]  # Obtém apenas a parte da hora
-        dataFormatada = data.replace("/", "-")  # Substitui "/" por "-" para evitar problemas com nomes de arquivos
-        horaFormatada = hora.replace(":", ".") # Substitui ":" por "." para evitar problemas com nomes de arquivos
+        data = data_hora.split()[0]  # Obtém apenas a parte da data
+        hora = data_hora.split()[1]  # Obtém apenas a parte da hora
+        data_formatada = data.replace("/", "-")  # Substitui "/" por "-" para evitar problemas com nomes de arquivos
+        hora_formatada = hora.replace(":", ".")  # Substitui ":" por "." para evitar problemas com nomes de arquivos
 
         # Compondo o nome do arquivo com o tipo de relatório, data e hora
-        nomeArquivo = f"{tipoRelatorio}_{dataFormatada}_{horaFormatada}.xml"
+        nome_arquivo = f"{tipo_relatorio}_{data_formatada}_{hora_formatada}.xml"
 
         # Diretório onde o arquivo será salvo (pode ser ajustado conforme necessário)
         diretorio = "relatorioBoleto_xml"
@@ -244,9 +246,9 @@ def registroXml(envios, tipoRelatorio, dataHora):
             os.makedirs(diretorio)
 
         # Caminho completo para o arquivo
-        caminhoArquivo = os.path.join(diretorio, nomeArquivo)
+        caminho_arquivo = os.path.join(diretorio, nome_arquivo)
 
-        with open(caminhoArquivo, "w", encoding="utf-8") as file:
+        with open(caminho_arquivo, "w", encoding="utf-8") as file:
             for envio in envios:
                 line = ", ".join([f"{key}: {value}" for key, value in envio.items()])
                 file.write(line + "\n")
@@ -254,15 +256,14 @@ def registroXml(envios, tipoRelatorio, dataHora):
     except Exception as ex:
         # Em caso de erro, registra no arquivo XML
         logging.error(f'Ocorreu um erro ao gerar o relatório XML: {ex}')
-        with open(caminhoArquivo, "w", encoding="utf-8") as file:
+        with open(caminho_arquivo, "w", encoding="utf-8") as file:
             file.write(f'Ocorreu um erro ao gerar o relatório XML: {ex}')
 
-
 try:
-    contatos = pegaContatosTeste(mat_prefix, cot_prefix)
-    mensagemTemplate = lerTemplate('msg.html')
-    enviosCorretos = []
-    enviosIncorretos = []
+    contatos = pegaContatosDB(mat_prefix, cot_prefix)
+    mensagem_template = lerTemplate('msg.html')
+    envio_corretos = []
+    envio_incorretos = []
     for contato in contatos:
         if envioPausado:
             logging.info('Envio de e-mails pausado.')
@@ -275,27 +276,28 @@ try:
         token = gerarToken(cot, mat)
         inserirToken(mat, token)
         linkToken = f"{link}{token}"
-        mensagem = mensagemTemplate.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
+        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
         assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
         enviado = enviarEmail(email, assunto, mensagem)
         if enviado:
-            enviosCorretos.append({'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
+            envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
 
         else:
-            if email not in [envio['destinatario'] for envio in enviosIncorretos]:
-                enviosIncorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'dataHora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade, 'erro': 'Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.'})
+            if email not in [envio['destinatario'] for envio in envio_incorretos]:
+                envio_incorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade, 'erro': 'Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.'})
 
-    relatorioPorUnidade(enviosCorretos, "Sucesso")
-    relatorioPorUnidade(enviosIncorretos, "Problema")
+    relatorio_por_unidade(envio_corretos, "Sucesso", destinatario_temporario="maycon.csc@smrede.com.br")
+    relatorio_por_unidade(envio_incorretos, "Problema", destinatario_temporario="maycon.csc@smrede.com.br")
+
     # Obtendo a data e hora atual
-    dataHoraAtual = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    data_hora_atual = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     # Registrando envios corretos em um arquivo XML
     logging.info('Registrando envios corretos em XML...')
-    registroXml(enviosCorretos, "relatorioSucesso", dataHoraAtual)
+    registro_xml(envio_corretos, "relatorioSucesso", data_hora_atual)
     logging.info('Envios corretos registrados em XML.')
     # Registrando envios incorretos em um arquivo XML
     logging.info('Registrando envios incorretos em XML...')
-    registroXml(enviosIncorretos, "relatorioProblema", dataHoraAtual)
+    registro_xml(envio_incorretos, "relatorioProblema", data_hora_atual)
     logging.info('Envios incorretos registrados em XML.')
 except Exception as ex:
     logging.error('Ocorreu um erro ao gerar o relatório de e-mail: %s', ex)

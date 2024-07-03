@@ -61,9 +61,9 @@ def pegaContatosDB(mat_prefix=None, cot_prefix=None):
         cursor = conn.cursor()
 
         if mat_prefix is not None and cot_prefix is not None:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL", (mat_prefix, cot_prefix))
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio IS NULL LIMIT 10", (mat_prefix, cot_prefix))
         else:
-            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL")
+            cursor.execute("SELECT mat, nome, cot, boleto, digitavel, created_at, email FROM boletos_geral WHERE envio IS NULL LIMIT 10")
 
         rows = cursor.fetchall()
 
