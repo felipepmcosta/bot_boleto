@@ -118,7 +118,7 @@ console.log(resposta)
 
 
           if (!(token === null )) {
-                return res.status(200).json({ varRet: "Segue o link do seu boleto: https://boleto.santamonicarede.com.br/"+resposta[0].dataValues.token});
+                return res.status(200).json({ varRet: "Segue o link do seu boleto: https://boletos.santamonicarede.com.br/"+resposta[0].dataValues.token});
                 // return res.status(200).json({ varRet: "Segue o link do seu boleto: http://192.168.1.214:3353/"+resposta[0].dataValues.token});
           }
           else{
