@@ -11,6 +11,7 @@ routes.use(function (req, res, next) {
 
 const BoletoController = require("../controllers/BoletosController");
 
+routes.post("/consultaMat", BoletoController.consultaBoleto);
 
 routes.use("/:token", BoletoController.validaBoleto);
 

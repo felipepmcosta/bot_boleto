@@ -12,6 +12,9 @@ class BoletosGeral extends Model {
         mat: {
           type: DataTypes.STRING
         },
+        nome: {
+          type: DataTypes.STRING
+        },
         cot: {
           type: DataTypes.STRING
         },
@@ -27,13 +30,30 @@ class BoletosGeral extends Model {
         envio: {
           type: DataTypes.DATE
         },
+        
         geracao: {
           type: DataTypes.DATE
         },
-        
-        nome: {
-          type: DataTypes.STRING
-        }
+        email: {
+          type: DataTypes.STRING,
+          allowNull: true
+        },
+        cpfa: {
+          type: DataTypes.STRING,
+          allowNull: true
+        },
+        cpf: {
+          type: DataTypes.STRING,
+          allowNull: true
+        },
+        cpf2: {
+          type: DataTypes.STRING,
+          allowNull: true
+        },
+        pix: {
+          type: DataTypes.STRING,
+          allowNull: true
+        },
       },
       {
         sequelize,
