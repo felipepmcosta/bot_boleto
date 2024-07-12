@@ -79,7 +79,7 @@ console.log(resposta)
       return regex.test(str);
     }
 
-  console.log(mat,cpf)
+  console.log("m",mat,cpf)
 
     try {
                       
@@ -118,15 +118,15 @@ console.log(resposta)
 
 
           if (!(token === null )) {
-                return res.status(200).json({ varRet: "Segue o link do seu boleto: https://boletos.santamonicarede.com.br/"+resposta[0].dataValues.token});
+                return res.status(200).json({ resultado:true, varRet: "Segue o link do seu boleto: https://boletos.santamonicarede.com.br/"+resposta[0].dataValues.token});
                 // return res.status(200).json({ varRet: "Segue o link do seu boleto: http://192.168.1.214:3353/"+resposta[0].dataValues.token});
           }
           else{
-            return res.status(200).json({varRet : "Sr.Responsável, não foi possível o processamento da Solicitação. O PDF não foi gerado para este aluno pela unidade. Favor entrar em contato com a Supervisão."});
+            return res.status(200).json({resultado:false, varRet : "Sr.Responsável, não foi possível o processamento da Solicitação. O PDF não foi gerado para este aluno pela unidade. Favor entrar em contato com a Supervisão."});
           }
         }
         else {
-          return res.status(200).json({varRet : `Sr. Responsável, não consta registro para a matricula ${mat}. Por gentileza, verifique se está fornecendo os dados corretamente.` });
+          return res.status(200).json({resultado:false, varRet : `Sr. Responsável, não consta registro para a matricula ${mat}. Por gentileza, verifique se está fornecendo os dados corretamente.` });
         }
 
     }catch(error)
