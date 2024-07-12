@@ -103,8 +103,8 @@ console.log(resposta)
             //   [Sequelize.Op.ne]: null
             // }
           },
-          // order: [['data_gerado', 'DESC']], // Ordena por data_registro em ordem decrescente
-          // limit: 1 // Limita o resultado para apenas um registro
+          order: [['gerado', 'DESC']], // Ordena por data_registro em ordem decrescente
+          limit: 1 // Limita o resultado para apenas um registro
         });
       
         if ((resposta.length > 0)) {
