@@ -1,32 +1,28 @@
-import os, smtplib, logging, hashlib, datetime, re, traceback
+# enviaBoletos.py
+import os, sys
+import smtplib
+import logging
+import datetime
+import json
 from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email_validator import validate_email, EmailNotValidError
-from db import pegaContatosDB, inserirToken, pegaContatosTeste, atualizarEnvio
-import sys
+from email_validator import validate_email
+from db import Database
 
-# Obtendo os argumentos da linha de comando
-args = sys.argv[1:]  # Ignora o primeiro argumento, que é o nome do script
+# Configurando o sistema de logging
+logging.basicConfig(filename='email_logs.log', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Verificando se foram fornecidos argumentos suficientes
-if len(args) < 2:
+# Verificando os argumentos mat_prefix e cot_prefix
+if len(sys.argv) < 3:
     print("Os argumentos 'mat_prefix' e 'cot_prefix' não foram fornecidos. Enviando boletos para todos os contatos disponíveis...")
     mat_prefix = None
     cot_prefix = None
 else:
     # Atribuindo os argumentos a 'mat_prefix' e 'cot_prefix'
-    mat_prefix = args[0]
-    cot_prefix = args[1]
-
-# Obtendo os contatos com base nos dois primeiros dígitos de 'mat' e 'cot' da função pegaContatosDB()
-contatos = pegaContatosTeste(mat_prefix, cot_prefix)
-
-# Se não houver contatos disponíveis, exiba uma mensagem e saia
-if not contatos:
-    print("Não foram encontrados contatos para enviar boletos. Todos já foram enviados.")
-    sys.exit(1)
-
+    mat_prefix = sys.argv[1]
+    cot_prefix = sys.argv[2]
 
 # Constantes para configurações de e-mail
 SMTP_HOST = 'smtp.smce.rio.br'
@@ -40,28 +36,15 @@ EMAIL_SENDER = 'boleto@smce.rio.br'
 # Variável de controle para pausar o envio de e-mails
 envioPausado = False
 
-# Configuração do sistema de logging
-logging.basicConfig(filename='email_logs.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
 link = "https://boletos.santamonicarede.com.br/"
 
-def gerarToken(cot, mat):
-    # Concatenar os dados em uma única string
-    dadosConcatenados = f"{cot}{mat}"
-
-    # Calcular o hash MD5 da string concatenada com o link
-    hash_md5 = hashlib.md5((dadosConcatenados).encode()).hexdigest()
-
-    return hash_md5
-
 def lerTemplate(filename):
-    # function para ler o modelo do e-mail a ser enviado
+    # Função para ler o modelo do e-mail a ser enviado
     with open(filename, 'r', encoding='utf-8') as arquivotemplate:
         return Template(arquivotemplate.read())
 
 def pegaUnidade(matricula):
-    # function para obter a unidade com base na matrícula
+    # Função para obter a unidade com base na matrícula
     unidades = {
         "01": "Bento Ribeiro",
         "02": "Madureira",
@@ -102,8 +85,8 @@ def emailsPorUnidade():
     return emailsUnidade
 
 def enviarEmail(destinatario, assunto, mensagem, emailsUnidade=None):
+    destinatario_temporario = "maycon.csc@smrede.com.br"
     try:
-        destinatario_temporario = "maycon.csc@smrede.com.br"
         # Dividindo vários endereços de e-mail e removendo strings vazias
         destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
         for destinatario in destinatarios:
@@ -194,110 +177,61 @@ def relatorio_por_unidade(envios, tipo_relatorio, destinatario_temporario):
     except Exception as ex:
         logging.error(f'Ocorreu um erro ao gerar os relatórios de envio de e-mail por unidade: {ex}')
 
-
-try:
-    contatos = pegaContatosDB(mat_prefix, cot_prefix)
-    envio_corretos = []
-    envio_incorretos = []
-    for contato in contatos:
-        if envioPausado:
-            logging.info('Envio de e-mails pausado.')
-            break
-        nome = contato['nome']
-        mat = contato['mat']
-        cot = contato['cot']
-        unidade = pegaUnidade(mat)
-        email = contato['email']
-        token = gerarToken(cot, mat)
-        inserirToken(mat, token)
-        linkToken = f"{link}{token}"
-        mensagem_template = lerTemplate('msg.html')
-        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
-        assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
-        enviado = enviarEmail(email, assunto, mensagem)
-        if enviado:
-            envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
-            atualizarEnvio(mat)
-        else:
-            if email not in [envio['destinatario'] for envio in envio_incorretos]:
-                envio_incorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade})
-    relatorio_por_unidade(envio_corretos, "Sucesso", destinatario_temporario="maycon.csc@smrede.com.br")
-    relatorio_por_unidade(envio_incorretos, "Problema", destinatario_temporario="maycon.csc@smrede.com.br")
-
-except Exception as ex:
-    logging.error('Ocorreu um erro ao gerar os relatórios de envio de e-mail: %s', ex)
-
 def registro_xml(envios, tipo_relatorio, data_hora):
     try:
         # Obtendo a data e hora para incluir no título do arquivo
         data = data_hora.split()[0]  # Obtém apenas a parte da data
         hora = data_hora.split()[1]  # Obtém apenas a parte da hora
-        data_formatada = data.replace("/", "-")  # Substitui "/" por "-" para evitar problemas com nomes de arquivos
-        hora_formatada = hora.replace(":", ".")  # Substitui ":" por "." para evitar problemas com nomes de arquivos
 
-        # Compondo o nome do arquivo com o tipo de relatório, data e hora
-        nome_arquivo = f"{tipo_relatorio}_{data_formatada}_{hora_formatada}.xml"
+        # Construindo o nome do arquivo com base na data e hora atuais
+        nome_arquivo = f"relatorio_envios_{data}_{hora}.xml"
 
-        # Diretório onde o arquivo será salvo (pode ser ajustado conforme necessário)
-        diretorio = "relatorioBoleto_xml"
-
-        # Verificando se o diretório existe, caso contrário, criando-o
-        if not os.path.exists(diretorio):
-            os.makedirs(diretorio)
-
-        # Caminho completo para o arquivo
-        caminho_arquivo = os.path.join(diretorio, nome_arquivo)
-
-        with open(caminho_arquivo, "w", encoding="utf-8") as file:
+        # Criando o arquivo XML de relatório
+        with open(nome_arquivo, 'w') as arquivo_xml:
+            arquivo_xml.write("<?xml version='1.0' encoding='UTF-8'?>\n")
+            arquivo_xml.write("<relatorio>\n")
             for envio in envios:
-                line = ", ".join([f"{key}: {value}" for key, value in envio.items()])
-                file.write(line + "\n")
+                arquivo_xml.write("  <envio>\n")
+                arquivo_xml.write(f"    <matricula>{envio['matricula']}</matricula>\n")
+                arquivo_xml.write(f"    <nome>{envio['nome']}</nome>\n")
+                arquivo_xml.write(f"    <destinatario>{envio['destinatario']}</destinatario>\n")
+                arquivo_xml.write(f"    <data_hora>{envio['data_hora']}</data_hora>\n")
+                arquivo_xml.write(f"    <status>{tipo_relatorio}</status>\n")
+                arquivo_xml.write("  </envio>\n")
+            arquivo_xml.write("</relatorio>\n")
 
+        logging.info(f'Arquivo XML de relatório "{nome_arquivo}" criado com sucesso.')
     except Exception as ex:
-        # Em caso de erro, registra no arquivo XML
-        logging.error(f'Ocorreu um erro ao gerar o relatório XML: {ex}')
-        with open(caminho_arquivo, "w", encoding="utf-8") as file:
-            file.write(f'Ocorreu um erro ao gerar o relatório XML: {ex}')
+        logging.error(f'Ocorreu um erro ao gerar o arquivo XML de relatório: {ex}')
 
-try:
-    contatos = pegaContatosDB(mat_prefix, cot_prefix)
-    mensagem_template = lerTemplate('msg.html')
-    envio_corretos = []
-    envio_incorretos = []
-    for contato in contatos:
-        if envioPausado:
-            logging.info('Envio de e-mails pausado.')
-            break
-        nome = contato['nome']
-        mat = contato['mat']
-        cot = contato['cot']
-        unidade = pegaUnidade(mat)
-        email = contato['email']
-        token = gerarToken(cot, mat)
-        inserirToken(mat, token)
-        linkToken = f"{link}{token}"
-        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
-        assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
-        enviado = enviarEmail(email, assunto, mensagem)
-        if enviado:
-            envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
+def enviar_boletos(mat_prefix, cot_prefix):
+    try:
+        contatos = Database().pega_contatos_db(mat_prefix, cot_prefix)
+        for contato in contatos:
+            if envioPausado:
+                logging.info('Envio de e-mails pausado.')
+                break
+            nome = contato['nome']
+            mat = contato['mat']
+            cot = contato['cot']
+            unidade = pegaUnidade(mat)
+            email = contato['email']
+            emailsUnidade = emailsPorUnidade().get(unidade, [])
+            mensagem_template = lerTemplate('msg.html')
+            mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=f"{link}{contato['token']}")
+            assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
+            enviado = enviarEmail(email, assunto, mensagem, emailsUnidade)
+            if enviado:
+                Database().atualizar_envio(mat)
+            else:
+                logging.error(f"Falha ao enviar e-mail para {nome} ({email})")
+    except Exception as ex:
+        logging.error(f"Ocorreu um erro ao enviar os boletos: {ex}")
 
-        else:
-            if email not in [envio['destinatario'] for envio in envio_incorretos]:
-                envio_incorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade, 'erro': 'Erro ao enviar o e-mail: An email address cannot have a period immediately after the @-sign.'})
+if __name__ == '__main__':
+    # Parâmetros para filtrar os contatos
+    mat_prefix = None
+    cot_prefix = None
 
-    relatorio_por_unidade(envio_corretos, "Sucesso", destinatario_temporario="maycon.csc@smrede.com.br")
-    relatorio_por_unidade(envio_incorretos, "Problema", destinatario_temporario="maycon.csc@smrede.com.br")
-
-    # Obtendo a data e hora atual
-    data_hora_atual = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    # Registrando envios corretos em um arquivo XML
-    logging.info('Registrando envios corretos em XML...')
-    registro_xml(envio_corretos, "relatorioSucesso", data_hora_atual)
-    logging.info('Envios corretos registrados em XML.')
-    # Registrando envios incorretos em um arquivo XML
-    logging.info('Registrando envios incorretos em XML...')
-    registro_xml(envio_incorretos, "relatorioProblema", data_hora_atual)
-    logging.info('Envios incorretos registrados em XML.')
-except Exception as ex:
-    logging.error('Ocorreu um erro ao gerar o relatório de e-mail: %s', ex)
+    # Executando a função para enviar boletos
+    enviar_boletos(mat_prefix, cot_prefix)

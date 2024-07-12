@@ -1,0 +1,7 @@
+{
+    "para": "maycon.csc@smrede.com.br",
+    "de": "mol@smrede.com.br",
+    "assunto": "teste de envio",
+    "texto": "ola meu email",
+    "html": "<strong>Envio usando API, sem smtp e com DNS atualizado  </strong>"
+}
