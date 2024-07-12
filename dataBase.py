@@ -19,9 +19,9 @@ class Database:
         self.cursor.close()
         self.conn.close()
 
-    def inserir_token(self, mat, token):
+    def inserir_token(self, mat, cot, token):
         try:
-            self.cursor.execute("UPDATE boletos_geral SET token = %s WHERE mat = %s AND token IS NULL AND boleto IS NOT NULL", (token, mat))
+            self.cursor.execute("UPDATE boletos_geral SET token = %s WHERE mat = %s AND cot = %s AND token IS NULL AND boleto IS NOT NULL", (token, mat, cot))
         except psycopg2.Error as e:
             logger.error("Erro ao inserir token no PostgreSQL: %s", e)
 
