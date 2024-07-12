@@ -114,7 +114,7 @@ console.log(resposta)
           console.log(cpf_procurado,cpf,cpfa,cpf2)
 
           if (!(cpf === cpf_procurado || cpfa === cpf_procurado || cpf2 === cpf_procurado)) 
-             return res.status(200).json({ varRet: `O CPF ${cpf_procurado} não esta associado com a matrícula ${mat}.`});
+             return res.status(200).json({ resultado:false, varRet: `O CPF ${cpf_procurado} não esta associado com a matrícula ${mat}.`});
 
 
           if (!(token === null )) {
