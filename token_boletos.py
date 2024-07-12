@@ -12,6 +12,7 @@ def gerar_token(cot, mat):
     payload = {
         "cot": cot,
         "mat": mat,
+        "iat": datetime.datetime.utcnow().isoformat()  # Incluir o timestamp atual
     }
     # Gerar o token JWT assinado
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
