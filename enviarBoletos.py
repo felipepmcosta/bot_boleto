@@ -37,7 +37,7 @@ logging.basicConfig(filename='email_logs.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Link do Boleto
-link = "https://boleto.santamonicarede.com.br/"  
+link = "https://boletos.santamonicarede.com.br/"  
 
 def ler_template(filename):
     # Função para ler o modelo do e-mail a ser enviado
