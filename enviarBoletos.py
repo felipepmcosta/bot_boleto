@@ -23,7 +23,7 @@ contatos = pega_contatos_db(mat_prefix, cot_prefix)
 
 # Se não houver contatos disponíveis, exiba uma mensagem e saia
 if not contatos:
-    print("Não foram encontrados contatos para enviar boletins. Todos já foram enviados.")
+    print("Não foram encontrados contatos para enviar boletos. Todos já foram enviados.")
     sys.exit(1)
 
 # Constante para o remetente padrão
@@ -66,7 +66,7 @@ def pega_unidade(matricula):
     return unidades.get(numero, "Sem Unidade selecionada")
 
 def enviarEmail(destinatario, assunto, mensagem):
-    destinatario_temporario = "maycon.csc@smrede.com.br"
+    destinatario_temporario = "marcos.csc@smrede.com.br"
     
     try:
         envio_destinatarios = [email.strip() for email in destinatario_temporario.split(',') if email.strip()]

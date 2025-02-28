@@ -5,35 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O seu Boleto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cabecalho, .rodape {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .conteudo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+        .imagem-direita {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: calc(110% + 30vh); /* 70% do cabeçalho + extra para garantir ajuste */
+            max-height: none; /* Evita ultrapassar a altura total */
+            width: auto;
+            object-fit: cover;
+            z-index: 2; /* Mantém a imagem sobreposta */
+        }
+
+        @media (max-width: 800px) {
+            .imagem-direita {
+                position: static;
+                width: 50%;
+                height: auto;
+                max-height: none;
+                margin-top: 20px;
+            }
+        }
+        .conteudo {
+            text-align: left;
+            padding: 20px;
+            width: 100%;
+        }
+        .botao-link {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #f37d1d;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .conteudo-wrapper {
+                flex-direction: column;
+                align-items: center;
+                position: static;
+            }
+            .imagem-direita {
+                position: static;
+                transform: none;
+                width: 50%;
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, sans-serif;">
-        <tr>
-            <td align="left">
-                <img src="https://www.santamonicarede.com.br/wp-content/uploads/2023/09/cabecalho_e-mail.png" alt="" width="800" height="274">
-            </td>
-        </tr>
-        <tr>
-            <td align="left" style="padding: 20px 20px 0;">
-                <p style="font-size: 16px;">
-                    Olá, responsável do(a) <strong>${PERSON_NAME}</strong>,
-                </p>
-                <p style="font-size: 16px;">
-                    Esperamos encontrá-lo bem.
-                </p>
-                <p style="font-size: 16px;">
-                    Segue abaixo o seu <strong>Boleto</strong>:
-                </p>
-                <p style="font-size: 16px;">
-                    <a href="${LINK}" style="text-decoration: underline; color: #0000FF;">ACESSE AQUI O BOLETO</a>
-                </p>
-                <p style="font-size: 16px;">
-                    Atenciosamente,
-                    <br>
-                    <strong>Santa Mônica Rede de Ensino</strong>
-                </p>
-            </td>
-        </tr>
-    </table>
+
+    <div class="container">
+        <img src="cabecalho.png" alt="Cabeçalho" class="cabecalho">
+        
+        <!-- Container para conteúdo e imagem à direita -->
+        <div class="conteudo-wrapper">
+            <div class="conteudo">
+                <p>Olá, responsável do(a) <strong>${PERSON_NAME}</strong>,</p>
+                <p>Esperamos encontrá-lo bem.</p>
+                <p>Segue abaixo o seu <strong>Boleto</strong> do(a) aluno(a):</p>
+                <p><a href="${LINK}" class="botao-link">ACESSE AQUI</a></p>
+                <p>Atenciosamente,<br><strong>Santa Mônica Rede de Ensino</strong></p>
+            </div>
+            <img src="Juliana.png" alt="Imagem à direita" class="imagem-direita">
+        </div>
+
+        <img src="rodape.png" alt="Rodapé" class="rodape">
+    </div>
+    
 </body>
 </html>

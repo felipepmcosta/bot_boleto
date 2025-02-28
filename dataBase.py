@@ -31,7 +31,7 @@ class Database:
     def pega_contatos_db(self):
         contatos = []
         try:
-            self.cursor.execute("SELECT id, mat, nome, cot, boleto, digitavel, token, envio, geracao, created_at, updated_at, email, cpfa, cpf, cpf2, pix FROM boletos_geral")
+            self.cursor.execute("SELECT id, mat, nome, cot, boleto, digitavel, token, envio, geracao, created_at, updated_at, email, cpfa, cpf, cpf2, pix FROM boletos_geral WHERE token IS NULL AND boleto IS NOT NULL")
             rows = self.cursor.fetchall()
             for row in rows:
                 contatos.append({
