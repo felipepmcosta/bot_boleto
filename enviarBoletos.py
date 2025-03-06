@@ -66,10 +66,10 @@ def pega_unidade(matricula):
     return unidades.get(numero, "Sem Unidade selecionada")
 
 def enviarEmail(destinatario, assunto, mensagem):
-    destinatario_temporario = "marcos.csc@smrede.com.br"
+    destinatario_temporario = "maycon.csc@smrede.com.br"
     
     try:
-        envio_destinatarios = [email.strip() for email in destinatario_temporario.split(',') if email.strip()]
+        envio_destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
 
         for destinatario_individual in envio_destinatarios:
             try:

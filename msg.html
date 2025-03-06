@@ -13,6 +13,7 @@
             text-align: center;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 90%;
             max-width: 800px;
@@ -22,47 +23,37 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .cabecalho, .rodape {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .conteudo-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            position: relative;
-        }
-        .imagem-direita {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            height: calc(110% + 30vh); /* 70% do cabeçalho + extra para garantir ajuste */
-            max-height: none; /* Evita ultrapassar a altura total */
-            width: auto;
-            object-fit: cover;
-            z-index: 2; /* Mantém a imagem sobreposta */
         }
 
-        @media (max-width: 800px) {
-            .imagem-direita {
-                position: static;
-                width: 50%;
-                height: auto;
-                max-height: none;
-                margin-top: 20px;
-            }
+        .cabecalho {
+            width: 100%;
+            height: auto; /* Ajusta a altura automaticamente */
+            max-height: 30%; /* Define uma altura máxima para o cabeçalho */
+            object-fit: contain; /* Mantém a proporção da imagem */
         }
+
+        .conteudo-wrapper {
+            width: 100%;
+            display: flex; /* Usa Flexbox para alinhar os itens */
+            flex-direction: row; /* Alinha os itens em uma linha */
+            align-items: flex-start; /* Alinha os itens ao topo */
+            margin-top: 20px; /* Espaço entre o cabeçalho e o conteúdo */
+        }
+
+        .imagem-direita {
+            width: 55%; /* Ajusta a largura para ocupar 50% do container */
+            max-width: 100%; /* Define uma largura máxima */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-left: 5%; /* Adiciona um espaço à esquerda da imagem */
+            margin-top: -20%; /* Move a imagem para cima */
+        }
+
         .conteudo {
             text-align: left;
             padding: 20px;
-            width: 100%;
+            width: 50%; /* Ajusta a largura para ocupar 50% do container */
         }
+
         .botao-link {
             text-decoration: none;
             color: #ffffff;
@@ -74,17 +65,35 @@
             text-align: center;
             margin-top: 10px;
         }
-        @media (max-width: 600px) {
+
+        .rodape {
+            width: 100%;
+            height: auto; /* Ajusta a altura automaticamente */
+        }
+
+        @media (max-width: 800px) {
             .conteudo-wrapper {
-                flex-direction: column;
-                align-items: center;
-                position: static;
+                flex-direction: column; /* Alinha os itens em uma coluna em telas menores */
             }
+
+            .imagem-direita, .conteudo {
+                width: 100%; /* Ajusta a largura para ocupar toda a largura em telas menores */
+                max-width: 100%;
+                margin-left: 0; /* Remove a margem à esquerda */
+            }
+
             .imagem-direita {
-                position: static;
-                transform: none;
-                width: 50%;
-                margin-top: 20px;
+                margin-top: 20px; /* Adiciona um espaço acima da imagem */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .conteudo {
+                font-size: 14px;
+            }
+            .botao-link {
+                padding: 8px 12px;
+                font-size: 14px;
             }
         }
     </style>
@@ -92,9 +101,10 @@
 <body>
 
     <div class="container">
+        <!-- Cabeçalho -->
         <img src="https://boletos.santamonicarede.com.br/images/cabecalho.png" alt="Cabeçalho" class="cabecalho">
         
-        <!-- Container para conteúdo e imagem à direita -->
+        <!-- Conteúdo -->
         <div class="conteudo-wrapper">
             <div class="conteudo">
                 <p>Olá, responsável do(a) <strong>${PERSON_NAME}</strong>,</p>
@@ -103,9 +113,11 @@
                 <p><a href="${LINK}" class="botao-link">ACESSE AQUI</a></p>
                 <p>Atenciosamente,<br><strong>Santa Mônica Rede de Ensino</strong></p>
             </div>
+            <!-- Imagem à direita -->
             <img src="https://boletos.santamonicarede.com.br/images/Juliana.png" alt="Imagem à direita" class="imagem-direita">
         </div>
 
+        <!-- Rodapé -->
         <img src="https://boletos.santamonicarede.com.br/images/rodape.png" alt="Rodapé" class="rodape">
     </div>
     
