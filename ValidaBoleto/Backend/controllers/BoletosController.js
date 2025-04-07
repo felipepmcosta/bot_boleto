@@ -104,6 +104,7 @@ module.exports = {
         limit: 1 // Limita o resultado para apenas um registro
       });
 
+      console.log(resposta)
       if ((resposta.length > 0)) {
 
         console.log(resposta[0].dataValues)
