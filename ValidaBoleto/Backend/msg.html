@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O seu Boleto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .cabecalho {
+            width: 100%;
+            height: auto; /* Ajusta a altura automaticamente */
+            max-height: 30%; /* Define uma altura máxima para o cabeçalho */
+            object-fit: contain; /* Mantém a proporção da imagem */
+        }
+
+        .conteudo-wrapper {
+            width: 100%;
+            display: flex; /* Usa Flexbox para alinhar os itens */
+            flex-direction: row; /* Alinha os itens em uma linha */
+            align-items: flex-start; /* Alinha os itens ao topo */
+            margin-top: 20px; /* Espaço entre o cabeçalho e o conteúdo */
+        }
+
+        .imagem-direita {
+            width: 55%; /* Ajusta a largura para ocupar 50% do container */
+            max-width: 100%; /* Define uma largura máxima */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-left: 5%; /* Adiciona um espaço à esquerda da imagem */
+            margin-top: -20%; /* Move a imagem para cima */
+        }
+
+        .conteudo {
+            text-align: left;
+            padding: 20px;
+            width: 50%; /* Ajusta a largura para ocupar 50% do container */
+        }
+
+        .botao-link {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #f37d1d;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .rodape {
+            width: 100%;
+            height: auto; /* Ajusta a altura automaticamente */
+        }
+
+        @media (max-width: 800px) {
+            .conteudo-wrapper {
+                flex-direction: column; /* Alinha os itens em uma coluna em telas menores */
+            }
+
+            .imagem-direita, .conteudo {
+                width: 100%; /* Ajusta a largura para ocupar toda a largura em telas menores */
+                max-width: 100%;
+                margin-left: 0; /* Remove a margem à esquerda */
+            }
+
+            .imagem-direita {
+                margin-top: 20px; /* Adiciona um espaço acima da imagem */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .conteudo {
+                font-size: 14px;
+            }
+            .botao-link {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <img src="https://boletos.santamonicarede.com.br/images/cabecalho.png" alt="Cabeçalho" class="cabecalho">
+        
+        <!-- Conteúdo -->
+        <div class="conteudo-wrapper">
+            <div class="conteudo">
+                <p>Olá, responsável do(a) <strong>${PERSON_NAME}</strong>,</p>
+                <p>Esperamos encontrá-lo bem.</p>
+                <p>Segue abaixo o seu <strong>Boleto</strong> do(a) aluno(a):</p>
+                <p><a href="${LINK}" class="botao-link">ACESSE AQUI</a></p>
+                <p>Atenciosamente,<br><strong>Santa Mônica Rede de Ensino</strong></p>
+            </div>
+            <!-- Imagem à direita -->
+            <img src="https://boletos.santamonicarede.com.br/images/Juliana.png" alt="Imagem à direita" class="imagem-direita">
+        </div>
+
+        <!-- Rodapé -->
+        <img src="https://boletos.santamonicarede.com.br/images/rodape.png" alt="Rodapé" class="rodape">
+    </div>
+    
+</body>
+</html>

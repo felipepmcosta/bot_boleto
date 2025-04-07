@@ -19,28 +19,19 @@ class Database:
         self.cursor.close()
         self.conn.close()
 
-    def inserirToken(self, mat, token):
+    def inserir_token(self, mat, cot, token):
         try:
-            self.cursor.execute("UPDATE boletos_geral SET token = %s WHERE mat = %s AND token IS NULL AND boleto IS NOT NULL", (token, mat))
+            self.cursor.execute("UPDATE boletos_geral SET token = %s WHERE mat = %s AND cot = %s AND token IS NULL AND boleto IS NOT NULL", (token, mat, cot))
         except psycopg2.Error as e:
             logger.error("Erro ao inserir token no PostgreSQL: %s", e)
 
     def commit(self):
         self.conn.commit()
 
-    def atualizar_envio(self, mat):
-        try:
-            self.cursor.execute("UPDATE boletos_geral SET envio = now() WHERE mat = %s", (mat,))
-        except psycopg2.Error as e:
-            logger.error("Erro ao atualizar coluna 'envio' no PostgreSQL: %s", e)
-
-    def pega_contatos_db(self, mat_prefix=None, cot_prefix=None):
+    def pega_contatos_db(self):
         contatos = []
         try:
-            if mat_prefix is not None and cot_prefix is not None:
-                self.cursor.execute("SELECT id, mat, nome, cot, boleto, digitavel, token, envio, geracao, created_at, updated_at, email, cpfa, cpf, cpf2, pix FROM boletos_geral WHERE LEFT(mat, 2) = %s AND cot = %s AND envio is NULL LIMIT 10", (mat_prefix, cot_prefix))
-            else:
-                self.cursor.execute("SELECT id, mat, nome, cot, boleto, digitavel, token, envio, geracao, created_at, updated_at, email, cpfa, cpf, cpf2, pix FROM boletos_geral WHERE envio is NULL LIMIT 10")
+            self.cursor.execute("SELECT id, mat, nome, cot, boleto, digitavel, token, envio, geracao, created_at, updated_at, email, cpfa, cpf, cpf2, pix FROM boletos_geral WHERE token IS NULL AND boleto IS NOT NULL")
             rows = self.cursor.fetchall()
             for row in rows:
                 contatos.append({
@@ -65,12 +56,3 @@ class Database:
             logger.error("Erro ao conectar ao PostgreSQL: %s", e)
 
         return contatos
-
-    @staticmethod
-    def extrairEmails(camposEmail):
-        emails = []
-        for campo in camposEmail:
-            if campo:
-                emails.extend(campo.split(','))
-
-        return [email.strip() for email in emails if email.strip()]
