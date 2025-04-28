@@ -45,9 +45,12 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
         cursor = conn.cursor()
 
         if mat_prefix is not None and cot_prefix is not None:
-            cursor.execute("SELECT * FROM boletos_geral WHERE mat = %s AND LEFT(mat, 2) = %s AND cot = %s AND envio is NULL", (mat_prefix, cot_prefix))
+            cursor.execute(
+                "SELECT * FROM boletos_geral WHERE mat = %s AND LEFT(mat, 2) = %s AND cot = %s AND envio is NULL",
+                (mat_prefix, mat_prefix[:2], cot_prefix)
+            )
         else:
-            cursor.execute("SELECT * FROM boletos_geral WHERE mat = %s AND envio is NULL")
+            cursor.execute("SELECT * FROM boletos_geral WHERE envio is NULL")
 
         rows = cursor.fetchall()
 

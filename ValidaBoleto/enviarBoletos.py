@@ -41,7 +41,9 @@ link = "https://boletos.santamonicarede.com.br/"
 
 def ler_template(filename):
     # Função para ler o modelo do e-mail a ser enviado
-    with open(filename, 'r', encoding='utf-8') as arquivotemplate:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, filename)
+    with open(file_path, 'r', encoding='utf-8') as arquivotemplate:
         return Template(arquivotemplate.read())
 
 def pega_unidade(matricula):
