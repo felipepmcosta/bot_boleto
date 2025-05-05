@@ -41,7 +41,9 @@ link = "https://boletos.santamonicarede.com.br/"
 
 def ler_template(filename):
     # Função para ler o modelo do e-mail a ser enviado
-    with open(filename, 'r', encoding='utf-8') as arquivotemplate:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, filename)
+    with open(file_path, 'r', encoding='utf-8') as arquivotemplate:
         return Template(arquivotemplate.read())
 
 def pega_unidade(matricula):
@@ -69,7 +71,7 @@ def enviarEmail(destinatario, assunto, mensagem):
     destinatario_temporario = "maycon.csc@smrede.com.br"
     
     try:
-        envio_destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
+        envio_destinatarios = [email.strip() for email in destinatario_temporario.split(',') if email.strip()]
 
         for destinatario_individual in envio_destinatarios:
             try:
