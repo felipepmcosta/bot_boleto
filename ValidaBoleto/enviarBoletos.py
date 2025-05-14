@@ -67,8 +67,28 @@ def pega_unidade(matricula):
     numero = matricula[:2]
     return unidades.get(numero, "Sem Unidade selecionada")
 
-def enviarEmail(destinatario, assunto, mensagem):
-    destinatario_temporario = "maycon.csc@smrede.com.br"
+def obter_mes_ano(cot):
+    meses = {
+        "01": "Janeiro",
+        "02": "Fevereiro",
+        "03": "Março",
+        "04": "Abril",
+        "05": "Maio",
+        "06": "Junho",
+        "07": "Julho",
+        "08": "Agosto",
+        "09": "Setembro",
+        "10": "Outubro",
+        "11": "Novembro",
+        "12": "Dezembro"
+    }
+    mes_numero = cot.zfill(2)  # Garante que o número do mês tenha dois dígitos (ex.: "1" → "01")
+    mes_nome = meses.get(mes_numero, "Mês Desconhecido")
+    ano = datetime.datetime.now().year
+    return f"{mes_nome}/{ano}"
+
+def enviarEmail(destinatario, assunto, mensagem, mat):
+    destinatario_temporario = "marcos.csc@smrede.com.br"
     
     try:
         envio_destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
@@ -120,7 +140,7 @@ def sendMessage(dados_json, api_url):
             return True
         else:
             logging.error(f'Falha ao enviar e-mail usando API para {dados_json["para"]}. Status code: {response.status_code}')
-            return False
+            return False 
 
     except requests.exceptions.RequestException as e:
         logging.error(f'Erro ao enviar e-mail usando API: {str(e)}')
@@ -141,9 +161,9 @@ try:
         email = contato['email']
         token = contato['token']
         linkToken = f"{link}{token}"
-        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken)
+        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot']), UNIDADE=unidade)
         assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
-        enviado = enviarEmail(email, assunto, mensagem)
+        enviado = enviarEmail(email, assunto, mensagem, mat)
         if enviado:
             envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
             atualizar_envio(mat)

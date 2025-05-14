@@ -45,7 +45,7 @@
             max-width: 100%; /* Define uma largura máxima */
             height: auto; /* Mantém a proporção da imagem */
             margin-left: 5%; /* Adiciona um espaço à esquerda da imagem */
-            margin-top: -20%; /* Move a imagem para cima */
+            margin-top: -9%; /* Move a imagem para cima */
         }
 
         .conteudo {
@@ -79,7 +79,6 @@
             .imagem-direita, .conteudo {
                 width: 100%; /* Ajusta a largura para ocupar toda a largura em telas menores */
                 max-width: 100%;
-                margin-left: 0; /* Remove a margem à esquerda */
             }
 
             .imagem-direita {
@@ -102,16 +101,18 @@
 
     <div class="container">
         <!-- Cabeçalho -->
-        <img src="https://boletos.santamonicarede.com.br/images/cabecalho.png" alt="Cabeçalho" class="cabecalho">
+        <img src="https://boletos.santamonicarede.com.br/images/cabecalho_boleto.png" alt="Cabeçalho" class="cabecalho">
         
         <!-- Conteúdo -->
         <div class="conteudo-wrapper">
             <div class="conteudo">
-                <p>Olá, responsável do(a) <strong>${PERSON_NAME}</strong>,</p>
-                <p>Esperamos encontrá-lo bem.</p>
-                <p>Segue abaixo o seu <strong>Boleto</strong> do(a) aluno(a):</p>
+                <p><strong>Prezado(a) responsável</strong></p> 
+                <p>Segue para sua comodidade o novo boleto bancário do SMREDE referente à cota do seu dependente:</p>
+                <p><strong>${PERSON_NAME}</strong></p>
                 <p><a href="${LINK}" class="botao-link">ACESSE AQUI</a></p>
-                <p>Atenciosamente,<br><strong>Santa Mônica Rede de Ensino</strong></p>
+                <p>Aproveite a opção de pagamento por PIX disponível no BOLETO!!!</p>
+                <p>Caso já tenha realizado o pagamento de ${MES_ANO}, favor desconsiderar o boleto</p>
+                <p>Atenciosamente,Tesouraria da unidade ${UNIDADE}</p>
             </div>
             <!-- Imagem à direita -->
             <img src="https://boletos.santamonicarede.com.br/images/Juliana.png" alt="Imagem à direita" class="imagem-direita">
