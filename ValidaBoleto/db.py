@@ -54,6 +54,7 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
                 AND envio is NULL 
                 AND token is NOT NULL
                 AND AGE(now(), geracao) < INTERVAL '28 days'
+                ORDER BY mat
                 """,
                 (mat_prefix, mat_prefix[:2], cot_prefix)
             )
@@ -64,6 +65,7 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
                 WHERE envio is NULL 
                 AND token is NOT NULL
                 AND AGE(now(), geracao) < INTERVAL '28 days'
+                ORDER BY mat
                 """
                 )
 
