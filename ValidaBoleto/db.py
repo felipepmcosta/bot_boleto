@@ -51,7 +51,8 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
                 WHERE mat = %s
                 AND LEFT(mat, 2) = %s 
                 AND cot = %s
-                AND envio is NULL
+                AND envio is NULL 
+                AND token is NOT NULL
                 AND AGE(now(), geracao) < INTERVAL '28 days'
                 """,
                 (mat_prefix, mat_prefix[:2], cot_prefix)
@@ -60,7 +61,8 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
             cursor.execute(
                 """
                 SELECT * FROM boletos_geral 
-                WHERE envio is NULL
+                WHERE envio is NULL 
+                AND token is NOT NULL
                 AND AGE(now(), geracao) < INTERVAL '28 days'
                 """
                 )
