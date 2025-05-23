@@ -91,7 +91,7 @@ def enviarEmail(destinatario, assunto, mensagem, mat):
     destinatario_temporario = "marcos.csc@smrede.com.br"
     
     try:
-        envio_destinatarios = [email.strip() for email in destinatario.split(',') if email.strip()]
+        envio_destinatarios = list(set([email.strip() for email in destinatario.split(',') if email.strip()]))
 
         for destinatario_individual in envio_destinatarios:
             try:
