@@ -90,26 +90,24 @@ def obter_mes_ano(cot):
 def enviarEmail(destinatario, assunto, mensagem, mat):
     destinatario_temporario = "marcos.csc@smrede.com.br"
     
-    try:
-        envio_destinatarios = list(set([email.strip() for email in destinatario.split(',') if email.strip()]))
+    envio_destinatarios = list(set([email.strip() for email in destinatario.split(',') if email.strip()]))
+    enviado_com_sucesso = False
 
-        for destinatario_individual in envio_destinatarios:
-            try:
-                # Validação de e-mail
-                v = validate_email(destinatario_individual)
-                email_validado = v.email  # Acessando o e-mail validado corretamente
-            except EmailNotValidError as e:
-                raise ValueError(f"O email '{destinatario_individual}' não está em um formato válido: {str(e)}")
+    for destinatario_individual in envio_destinatarios:
+        try:
+            # Validação de e-mail
+            v = validate_email(destinatario_individual)
+            email_validado = v.email  # Acessando o e-mail validado corretamente
 
             # Obter a unidade com base na matrícula
             unidade = pega_unidade(mat)
 
             # Dados do JSON incorporados no código
             dados_json = {
-                "para": destinatario_individual,  # Usando cada destinatário individualmente
-                "de": EMAIL_SENDER,  # Certifique-se de definir EMAIL_SENDER com seu endereço de e-mail
+                "para": destinatario_individual,
+                "de": EMAIL_SENDER,
                 "assunto": assunto,
-                "html": mensagem,  # Conteúdo HTML do e-mail
+                "html": mensagem,
                 "categorias": ["Boleto", unidade]
             }
 
@@ -121,14 +119,18 @@ def enviarEmail(destinatario, assunto, mensagem, mat):
 
             if enviado:
                 logging.info(f'E-mail enviado para {destinatario_individual} usando API.')
+                enviado_com_sucesso = True
             else:
                 logging.error(f'Falha ao enviar e-mail para {destinatario_individual} usando API.')
+                
+        except ValueError as e:
+            logging.error(f"O email '{destinatario_individual}' não está em um formato válido: {str(e)}")
+            continue  # Continua para o próximo destinatário
+        except requests.exceptions.RequestException as e:
+            logging.error(f'Erro ao enviar e-mail para {destinatario_individual}: {str(e)}')
+            continue  # Continua para o próximo destinatário
 
-        return True  # Indica que todos os e-mails foram enviados com sucesso
-
-    except (requests.exceptions.RequestException, ValueError) as e:
-        logging.error(f'Erro ao enviar o e-mail: {str(e)}')
-        return False
+    return enviado_com_sucesso  # Retorna True se pelo menos um e-mail foi enviado com sucesso
 
 def sendMessage(dados_json, api_url):
     try:
