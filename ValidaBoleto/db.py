@@ -46,11 +46,24 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
 
         if mat_prefix is not None and cot_prefix is not None:
             cursor.execute(
-                "SELECT * FROM boletos_geral WHERE mat = %s AND LEFT(mat, 2) = %s AND cot = %s AND envio is NULL",
+                """
+                SELECT * FROM boletos_geral" 
+                WHERE mat = %s
+                AND LEFT(mat, 2) = %s 
+                AND cot = %s
+                AND envio is NULL
+                AND AGE(now(), geracao) < INTERVAL '28 days'
+                """,
                 (mat_prefix, mat_prefix[:2], cot_prefix)
             )
         else:
-            cursor.execute("SELECT * FROM boletos_geral WHERE envio is NULL")
+            cursor.execute(
+                """
+                SELECT * FROM boletos_geral 
+                WHERE envio is NULL
+                AND AGE(now(), geracao) < INTERVAL '28 days'
+                """
+                )
 
         rows = cursor.fetchall()
 
