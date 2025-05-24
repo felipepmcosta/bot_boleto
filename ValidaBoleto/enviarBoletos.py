@@ -3,7 +3,7 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email_validator import validate_email, EmailNotValidError
-from db import pega_contatos_db, atualizar_envio
+from db import pega_contatos_db, atualizar_envio, extrair_emails
 
 # Obtendo os argumentos da linha de comando
 args = sys.argv[1:]  # Ignora o primeiro argumento, que é o nome do script
@@ -89,16 +89,11 @@ def obter_mes_ano(cot):
 
 def enviarEmail(destinatario, assunto, mensagem, mat):
     destinatario_temporario = "marcos.csc@smrede.com.br"
-    
-    envio_destinatarios = list(set([email.strip() for email in destinatario.split(',') if email.strip()]))
+    envio_destinatarios = extrair_emails([destinatario])  # Passa o destinatario como uma lista com uma string
     enviado_com_sucesso = False
 
     for destinatario_individual in envio_destinatarios:
         try:
-            # Validação de e-mail
-            v = validate_email(destinatario_individual)
-            email_validado = v.email  # Acessando o e-mail validado corretamente
-
             # Obter a unidade com base na matrícula
             unidade = pega_unidade(mat)
 
@@ -123,14 +118,17 @@ def enviarEmail(destinatario, assunto, mensagem, mat):
             else:
                 logging.error(f'Falha ao enviar e-mail para {destinatario_individual} usando API.')
                 
-        except ValueError as e:
-            logging.error(f"O email '{destinatario_individual}' não está em um formato válido: {str(e)}")
+        except EmailNotValidError as e:
+            logging.error(f"O e-mail '{destinatario_individual}' não está em um formato válido: {str(e)}")
             continue  # Continua para o próximo destinatário
         except requests.exceptions.RequestException as e:
             logging.error(f'Erro ao enviar e-mail para {destinatario_individual}: {str(e)}')
             continue  # Continua para o próximo destinatário
+        except Exception as e:
+            logging.error(f'Erro inesperado ao processar e-mail {destinatario_individual}: {str(e)}')
+            continue  # Continua para o próximo destinatário
 
-    return enviado_com_sucesso  # Retorna True se pelo menos um e-mail foi enviado com sucesso
+    return enviado_com_sucesso
 
 def sendMessage(dados_json, api_url):
     try:
@@ -141,7 +139,9 @@ def sendMessage(dados_json, api_url):
             logging.info(f'E-mail enviado usando API para {dados_json["para"]}')
             return True
         else:
-            logging.error(f'Falha ao enviar e-mail usando API para {dados_json["para"]}. Status code: {response.status_code}')
+            # Capturar o corpo da resposta para mais detalhes
+            error_message = response.text if response.text else "Sem mensagem de erro detalhada"
+            logging.error(f'Falha ao enviar e-mail usando API para {dados_json["para"]}. Status code: {response.status_code}. Resposta: {error_message}')
             return False 
 
     except requests.exceptions.RequestException as e:
@@ -157,21 +157,38 @@ try:
         if envio_pausado:
             logging.info('Envio de e-mails pausado.')
             break
-        nome = contato['nome']
-        mat = contato['mat']
-        unidade = pega_unidade(mat)
-        email = contato['email']
-        token = contato['token']
-        linkToken = f"{link}{token}"
-        mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot']), UNIDADE=unidade)
-        assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
-        enviado = enviarEmail(email, assunto, mensagem, mat)
-        if enviado:
-            envio_corretos.append({'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'destinatario': email, 'nome': nome, 'matricula': mat, 'unidade': unidade})
-            atualizar_envio(mat)
-        else:
-            if email not in [envio['destinatario'] for envio in envio_incorretos]:
-                envio_incorretos.append({'destinatario': email, 'nome': nome, 'matricula': mat, 'email': email, 'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"), 'unidade': unidade})
+        try:
+            nome = contato['nome']
+            mat = contato['mat']
+            unidade = pega_unidade(mat)
+            email = contato['email']
+            token = contato['token']
+            linkToken = f"{link}{token}"
+            mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot']), UNIDADE=unidade)
+            assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
+            enviado = enviarEmail(email, assunto, mensagem, mat)
+            if enviado:
+                envio_corretos.append({
+                    'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+                    'destinatario': email,
+                    'nome': nome,
+                    'matricula': mat,
+                    'unidade': unidade
+                })
+                atualizar_envio(mat)
+            else:
+                if email not in [envio['destinatario'] for envio in envio_incorretos]:
+                    envio_incorretos.append({
+                        'destinatario': email,
+                        'nome': nome,
+                        'matricula': mat,
+                        'email': email,
+                        'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+                        'unidade': unidade
+                    })
+        except Exception as ex:
+            logging.error(f'Erro ao processar contato {contato["mat"]}: {str(ex)}')
+            continue  # Continua para o próximo contato
 
 except Exception as ex:
-    logging.error('Ocorreu um erro ao enviar e-mails: %s', ex)
+    logging.error('Erro geral ao iniciar o envio de e-mails: %s', ex)

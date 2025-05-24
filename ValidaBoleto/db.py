@@ -1,5 +1,6 @@
 import psycopg2
 import logging
+from email_validator import validate_email, EmailNotValidError
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -29,7 +30,16 @@ def extrair_emails(campos_email):
     for campo in campos_email:
         if campo:
             emails.extend(campo.split(','))
-    return [email.strip() for email in emails if email.strip()]
+    valid_emails = []
+    for email in emails:
+        email = email.strip()
+        if email:
+            try:
+                v = validate_email(email, check_deliverability=False)
+                valid_emails.append(v.email)
+            except EmailNotValidError as e:
+                logger.error(f"E-mail inválido descartado: {email} - {str(e)}")
+    return list(set(valid_emails))
 
 def pega_contatos_db(mat_prefix=None, cot_prefix=None):
     contatos = []
