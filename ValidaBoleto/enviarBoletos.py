@@ -136,10 +136,10 @@ def sendMessage(dados_json, api_url):
         response = requests.post(api_url, headers=headers, json=dados_json)
 
         if response.status_code == 200:
-            logging.info(f'E-mail enviado usando API para {dados_json["para"]}')
+            unidade = dados_json["categorias"][1] if len(dados_json["categorias"]) > 1 else "Unidade não especificada"
+            logging.info(f'E-mail enviado para {dados_json["para"]}. Unidade: {unidade}')
             return True
         else:
-            # Capturar o corpo da resposta para mais detalhes
             error_message = response.text if response.text else "Sem mensagem de erro detalhada"
             logging.error(f'Falha ao enviar e-mail usando API para {dados_json["para"]}. Status code: {response.status_code}. Resposta: {error_message}')
             return False 
