@@ -140,18 +140,9 @@ def sendMessage(dados_json, api_url):
         if response.status_code == 200:
             logging.info(f'E-mail enviado usando API para {dados_json["para"]}')
             return True
-    else:
-        try:
-            error_details = response.json()  # Tenta interpretar a resposta como JSON
-        except ValueError:
-            error_details = response.text  # Se não for JSON, captura como texto
-
-        logging.error(
-            f'Falha ao enviar e-mail usando API para {dados_json["para"]}. '
-            f'Status code: {response.status_code}. '
-            f'Detalhes do erro: {error_details}'
-        )
-        return False
+        else:
+            logging.error(f'Falha ao enviar e-mail usando API para {dados_json["para"]}. Status code: {response.status_code}')
+            return False 
 
     except requests.exceptions.RequestException as e:
         logging.error(f'Erro ao enviar e-mail usando API: {str(e)}')
