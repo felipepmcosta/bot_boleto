@@ -57,7 +57,7 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
         if mat_prefix is not None and cot_prefix is not None:
             cursor.execute(
                 """
-                SELECT * FROM boletos_geral" 
+                SELECT * FROM boletos_geral 
                 WHERE mat = %s
                 AND LEFT(mat, 2) = %s 
                 AND cot = %s
@@ -77,14 +77,11 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
                 AND AGE(now(), geracao) < INTERVAL '28 days'
                 ORDER BY mat
                 """
-                )
+            )
 
         rows = cursor.fetchall()
 
-        # Encontrar a data mais recente entre os resultados
-        data_mais_recente = max(row[9] for row in rows) if rows else None
-
-        # Iterar sobre os resultados e filtrar apenas os registros com a data mais recente
+        # Removido o filtro de data_mais_recente
         for row in rows:
             id = row[0]
             mat = row[1]
@@ -103,26 +100,24 @@ def pega_contatos_db(mat_prefix=None, cot_prefix=None):
             cpf2 = row[14]
             pix = row[15]
 
-            # Verificar se a data gerada é a mais recente
-            if created_at == data_mais_recente:
-                contatos.append({
-                    'id': id,
-                    'mat': mat,
-                    'nome': nome,
-                    'cot': cot,
-                    'boleto': boleto,
-                    'digitavel': digitavel,
-                    'token': token,
-                    'envio': envio,
-                    'geracao': geracao,
-                    'created_at': created_at,
-                    'updated_at': updated_at,
-                    'email': email,
-                    'cpfa': cpfa,
-                    'cpf': cpf,
-                    'cpf2': cpf2,
-                    'pix': pix
-                })
+            contatos.append({
+                'id': id,
+                'mat': mat,
+                'nome': nome,
+                'cot': cot,
+                'boleto': boleto,
+                'digitavel': digitavel,
+                'token': token,
+                'envio': envio,
+                'geracao': geracao,
+                'created_at': created_at,
+                'updated_at': updated_at,
+                'email': email,
+                'cpfa': cpfa,
+                'cpf': cpf,
+                'cpf2': cpf2,
+                'pix': pix
+            })
     
     except psycopg2.Error as e:
         logger.error("Erro ao conectar ao PostgreSQL: %s", e)
