@@ -3,7 +3,7 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email_validator import validate_email, EmailNotValidError
-from db import pega_contatos_db, atualizar_envio, extrair_emails
+from db import pega_contatos_db, atualizar_envio, extrair_emails, inserir_log_boletos
 
 # Obtendo os argumentos da linha de comando
 args = sys.argv[1:]  # Ignora o primeiro argumento, que é o nome do script
@@ -87,13 +87,16 @@ def obter_mes_ano(cot):
     ano = datetime.datetime.now().year
     return f"{mes_nome}/{ano}"
 
-def enviarEmail(destinatario, assunto, mensagem, mat):
+def enviarEmail(destinatario, assunto, mensagem, mat, cot):
     destinatario_temporario = "marcos.csc@smrede.com.br"
     envio_destinatarios = extrair_emails([destinatario])  # Passa o destinatario como uma lista com uma string
     enviado_com_sucesso = False
 
     for destinatario_individual in envio_destinatarios:
         try:
+            # Registrar tentativa de envio na tabela log_boletos
+            inserir_log_boletos(mat, cot, destinatario_individual)
+
             # Obter a unidade com base na matrícula
             unidade = pega_unidade(mat)
 
@@ -103,7 +106,7 @@ def enviarEmail(destinatario, assunto, mensagem, mat):
                 "de": EMAIL_SENDER,
                 "assunto": assunto,
                 "html": mensagem,
-                "categorias": ["Boleto", unidade]
+                "categorias": ["Boleto", unidade, cot]
             }
 
             # URL da API para enviar e-mail
@@ -160,13 +163,14 @@ try:
         try:
             nome = contato['nome']
             mat = contato['mat']
+            cot = contato['cot']
             unidade = pega_unidade(mat)
             email = contato['email']
             token = contato['token']
             linkToken = f"{link}{token}"
             mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot']), UNIDADE=unidade)
             assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
-            enviado = enviarEmail(email, assunto, mensagem, mat)
+            enviado = enviarEmail(email, assunto, mensagem, mat, cot)
             if enviado:
                 envio_corretos.append({
                     'data_hora': datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S"),

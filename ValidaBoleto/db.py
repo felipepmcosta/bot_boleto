@@ -41,6 +41,32 @@ def extrair_emails(campos_email):
                 logger.error(f"E-mail inválido descartado: {email} - {str(e)}")
     return list(set(valid_emails))
 
+def inserir_log_boletos(mat, cot, destinatario):
+    try:
+        conn = psycopg2.connect(
+            dbname="BOLETOS",
+            user="postgres",
+            password="postgres",
+            host="192.168.1.163"
+        )
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            INSERT INTO log_boletos (mat, cot, destinatario, data_tentativa)
+            VALUES (%s, %s, %s, NOW())
+            """,
+            (mat, cot, destinatario)
+        )
+        conn.commit()
+        logger.info(f"Log inserido para mat: {mat}, cot: {cot}, destinatario: {destinatario}")
+    except psycopg2.Error as e:
+        logger.error(f"Erro ao registrar log de envio na tabela log_boletos: {str(e)}")
+    finally:
+        if cursor is not None:
+            cursor.close()
+        if conn is not None:
+            conn.close()
+
 def pega_contatos_db(mat_prefix=None, cot_prefix=None):
     contatos = []
     conn = None
