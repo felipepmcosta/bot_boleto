@@ -67,25 +67,22 @@ def pega_unidade(matricula):
     numero = matricula[:2]
     return unidades.get(numero, "Sem Unidade selecionada")
 
-def obter_mes_ano(cot):
+def obter_mes_ano(cot, geracao):
     meses = {
-        "01": "Janeiro",
-        "02": "Fevereiro",
-        "03": "Março",
-        "04": "Abril",
-        "05": "Maio",
-        "06": "Junho",
-        "07": "Julho",
-        "08": "Agosto",
-        "09": "Setembro",
-        "10": "Outubro",
-        "11": "Novembro",
-        "12": "Dezembro"
+        1: "Janeiro", 2: "Fevereiro", 3: "Março",
+        4: "Abril", 5: "Maio", 6: "Junho",
+        7: "Julho", 8: "Agosto", 9: "Setembro",
+        10: "Outubro", 11: "Novembro", 12: "Dezembro"
     }
-    mes_numero = cot.zfill(2)  # Garante que o número do mês tenha dois dígitos (ex.: "1" → "01")
-    mes_nome = meses.get(mes_numero, "Mês Desconhecido")
-    ano = datetime.datetime.now().year
-    return f"{mes_nome}/{ano}"
+
+    mes_boleto = int(cot)
+    mes_geracao = geracao.month
+    ano = geracao.year
+
+    if mes_boleto < mes_geracao:
+        ano += 1
+
+    return f"{meses.get(mes_boleto, 'Mês Desconhecido')}/{ano}"
 
 def enviarEmail(destinatario, assunto, mensagem, mat, cot):
     destinatario_temporario = "marcos.csc@smrede.com.br"
@@ -168,7 +165,8 @@ try:
             email = contato['email']
             token = contato['token']
             linkToken = f"{link}{token}"
-            mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot']), UNIDADE=unidade)
+            geracao = contato['geracao']
+            mensagem = mensagem_template.substitute(PERSON_NAME=nome.title(), LINK=linkToken, MES_ANO=obter_mes_ano(contato['cot'], geracao), UNIDADE=unidade)
             assunto = f"Seu BOLETO SMREDE - Unidade {unidade} chegou!!!"
             enviado = enviarEmail(email, assunto, mensagem, mat, cot)
             if enviado:
