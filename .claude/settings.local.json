@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where python *)",
+      "Bash(python -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\")",
+      "Bash(C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python38\\\\python.exe -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\")",
+      "Bash(C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\")",
+      "Bash(C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Python\\\\bin\\\\python.exe -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\")",
+      "PowerShell(python3.8 -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(python3.13 -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python38\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Python\\\\bin\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\MayconBruno\\Documents\\Github\\bot_boleto"
+    ]
+  }
+}
