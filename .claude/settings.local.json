@@ -10,7 +10,8 @@
       "PowerShell(python3.13 -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python38\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
-      "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Python\\\\bin\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)"
+      "PowerShell(& \"C:\\\\Users\\\\MayconBruno\\\\AppData\\\\Local\\\\Python\\\\bin\\\\python.exe\" -c \"import psycopg2, requests, email_validator; print\\('OK'\\)\" 2>&1)",
+      "Bash(git add *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\MayconBruno\\Documents\\Github\\bot_boleto"
