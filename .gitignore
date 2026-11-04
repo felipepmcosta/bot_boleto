@@ -1,2 +1,6 @@
 __pycache__/
 .claude/
+
+node_modules/
+.env
+!.env.example
